@@ -3,7 +3,6 @@
  * Adriaan van Wijk 21786275
  * Eberhardt Korf - ????????
  * William Theron 21564418
- * (c) 2019
  * <Insert Professional Quip or Joke Here>
  */
 

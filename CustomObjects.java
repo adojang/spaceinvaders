@@ -1,3 +1,11 @@
+/* 
+ * Coded by:
+ * Adriaan van Wijk 21786275
+ * Eberhardt Korf - ????????
+ * William Theron 21564418
+ * <Insert Professional Quip or Joke Here>
+ */
+
 public class CustomObjects
 {
  
