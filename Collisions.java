@@ -65,7 +65,6 @@ public class Collisions
                         missiles[i].setActive(false);
                         missiles[i].setX(0);
                         missiles[i].setY(0);
-                        GameLoop.activeMissiles--;
                         enemies[j][k].setActive(false);
                         
                     }

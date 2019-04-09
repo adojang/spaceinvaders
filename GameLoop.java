@@ -4,28 +4,31 @@ public class GameLoop
     public static PlayerEntity player;
     public static int missileCount = 10;
     public static MissileEntity[] missiles = new MissileEntity[missileCount];
-    public static int activeMissiles = 0;
     public static int enemyCount = 5;
     public static EnemyEntity[][] enemies = new EnemyEntity[enemyCount][enemyCount];
     public static int loopCycles = 0;
+    public static boolean missileTime = true;
     
     public static void runGameLoop()
     {
 
-        while(UserInput.checkUserInput() != "SPACE")
+        while(UserInput.checkKeyPressed("SPACE") == false)
         {
-
+            
+            UserInput.checkUserInput();
             Interface.updateMenu();
-            if(UserInput.checkUserInput() == "QUIT") System.exit(1);
+            if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
             
         }//while in the menu
         
         initialiseEntities();
         
-        while(UserInput.checkUserInput() != "QUIT")
+        while(UserInput.checkKeyPressed("QUIT") == false)
         {
             
             StdDraw.clear();
+            
+            UserInput.checkUserInput();
             
             entityMovement();
             
@@ -35,7 +38,6 @@ public class GameLoop
             
             
 
-            StdDraw.text(100,100, Integer.toString(activeMissiles));
 
             for(int i = 0; i < missileCount; i++)
             {
@@ -46,8 +48,12 @@ public class GameLoop
             }
             
                 
-                
-                
+            loopCycles++;
+            if(loopCycles == 15)
+            {
+                loopCycles = 0;
+                missileTime = true;
+            }
             
             StdDraw.show();
             StdDraw.pause(10); //games speed
@@ -96,34 +102,49 @@ public class GameLoop
             missiles[i].update();
             
         }
-        
-        if(UserInput.checkUserInput() == "SHOOT" && activeMissiles < missileCount)
+         
+        if(UserInput.checkKeyPressed("SPACE") == true && missileTime == true)
         {
+            int missileNumber = 0;
             
-            missiles[activeMissiles].setActive(true);
-            missiles[activeMissiles].setX((double) player.getX());
-            missiles[activeMissiles].setY((double) player.getY());
-
+            for(int i = 0; i < missileCount; i++)
+            {
+                if(missiles[i].getActive() == false)
+                {
+                    
+                    missiles[i].setActive(true);
+                    missiles[i].setX((double) player.getX());
+                    missiles[i].setY((double) player.getY());
+                    
+                    missileNumber = i;
+                    
+                    break;
+                    
+                }
+            }
+            
+            
             if(player.getRotation() < 0)
             {
                 
-                missiles[activeMissiles].setYVel( missiles[activeMissiles].getVelocity()  *  Math.sin( 2*Math.PI/4 + player.getRotation()*(Math.PI/180) ));
-                missiles[activeMissiles].setXVel( missiles[activeMissiles].getVelocity()  *  Math.cos( 2*Math.PI/4 + player.getRotation()*(Math.PI/180) ));
+                missiles[missileNumber].setYVel( missiles[missileNumber].getVelocity()  *  Math.sin( 2*Math.PI/4 + player.getRotation()*(Math.PI/180) ));
+                missiles[missileNumber].setXVel( missiles[missileNumber].getVelocity()  *  Math.cos( 2*Math.PI/4 + player.getRotation()*(Math.PI/180) ));
                 
             }else if(player.getRotation() > 0)
             {
                 
-                missiles[activeMissiles].setYVel( missiles[activeMissiles].getVelocity()  *  Math.sin( 2*Math.PI/4 - player.getRotation()*(Math.PI/180) ));
-                missiles[activeMissiles].setXVel( -missiles[activeMissiles].getVelocity()  *  Math.cos( 2*Math.PI/4 - player.getRotation()*(Math.PI/180) ));
+                missiles[missileNumber].setYVel( missiles[missileNumber].getVelocity()  *  Math.sin( 2*Math.PI/4 - player.getRotation()*(Math.PI/180) ));
+                missiles[missileNumber].setXVel( -missiles[missileNumber].getVelocity()  *  Math.cos( 2*Math.PI/4 - player.getRotation()*(Math.PI/180) ));
                 
             }else
             {
                 
-                missiles[activeMissiles].setYVel(missiles[activeMissiles].getVelocity());
-                                                 
+                missiles[missileNumber].setYVel(missiles[missileNumber].getVelocity());
+                
             }
             
-            activeMissiles++;
+
+            missileTime = false;
             
         }//check if user shot and if there are missiles available
         

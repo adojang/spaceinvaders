@@ -110,7 +110,6 @@ public class MissileEntity
                 yPos = 0;
                 xPos = 0;
                 active = false;
-                GameLoop.activeMissiles--;
             }
             
         }
