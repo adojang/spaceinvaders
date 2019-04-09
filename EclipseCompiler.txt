@@ -1,0 +1,534 @@
+9 Apr 2019 18:23:48 GMT: Log 'EclipseCompiler.txt' opened: 9 Apr 2019 18:23:48 GMT with name C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EclipseCompiler.txt
+9 Apr 2019 18:26:05 GMT: diagnostics = javax.tools.DiagnosticCollector@39f86c
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@3c9486
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java]
+9 Apr 2019 18:26:05 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1e9061a' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:26:07 GMT: Compiler call returned
+9 Apr 2019 18:52:45 GMT: diagnostics = javax.tools.DiagnosticCollector@233523
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1d18ff4
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:52:45 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1b9fd9' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:52:45 GMT: Compiler call returned
+9 Apr 2019 18:52:45 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@4d0c69
+9 Apr 2019 18:52:45 GMT:  Kind = ERROR
+9 Apr 2019 18:52:45 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java LineNo = 21 ColNo = 37 Msg = 'background1 cannot be resolved to a variable'
+9 Apr 2019 18:53:00 GMT: diagnostics = javax.tools.DiagnosticCollector@9a3535
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@117c37f
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:53:00 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1947700' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:53:00 GMT: Compiler call returned
+9 Apr 2019 18:53:00 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1781cee
+9 Apr 2019 18:53:00 GMT:  Kind = ERROR
+9 Apr 2019 18:53:00 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java LineNo = 21 ColNo = 37 Msg = 'background1 cannot be resolved to a variable'
+9 Apr 2019 18:53:54 GMT: diagnostics = javax.tools.DiagnosticCollector@2434ff
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@15733f
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:53:54 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1ddad34' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:53:55 GMT: Compiler call returned
+9 Apr 2019 18:53:55 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@4aea12
+9 Apr 2019 18:53:55 GMT:  Kind = ERROR
+9 Apr 2019 18:53:55 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java LineNo = 21 ColNo = 37 Msg = 'background1 cannot be resolved to a variable'
+9 Apr 2019 18:55:05 GMT: diagnostics = javax.tools.DiagnosticCollector@1235d97
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@16af02e
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:55:05 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1311c13' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:55:05 GMT: Compiler call returned
+9 Apr 2019 18:55:05 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@80a144
+9 Apr 2019 18:55:05 GMT:  Kind = ERROR
+9 Apr 2019 18:55:05 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java LineNo = 21 ColNo = 53 Msg = 'Syntax error on token "1", delete this token'
+9 Apr 2019 18:55:12 GMT: diagnostics = javax.tools.DiagnosticCollector@1e244a7
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@9cffc2
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:55:12 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@98b19' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:55:12 GMT: Compiler call returned
+9 Apr 2019 18:55:30 GMT: diagnostics = javax.tools.DiagnosticCollector@f49c5d
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@112de39
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:55:30 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@19d2b7b' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:55:30 GMT: Compiler call returned
+9 Apr 2019 18:56:59 GMT: diagnostics = javax.tools.DiagnosticCollector@1ab18af
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@12f8d81
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:56:59 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1a93660' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:56:59 GMT: Compiler call returned
+9 Apr 2019 18:58:39 GMT: diagnostics = javax.tools.DiagnosticCollector@11bc235
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@11e9222
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 18:58:39 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1c92dfd' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 18:58:39 GMT: Compiler call returned
+9 Apr 2019 19:00:22 GMT: diagnostics = javax.tools.DiagnosticCollector@1fdf6a8
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@4a058
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 19:00:22 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@810884' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:00:22 GMT: Compiler call returned
+9 Apr 2019 19:01:00 GMT: diagnostics = javax.tools.DiagnosticCollector@1bf2d41
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@b43a5c
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 19:01:00 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1baa6f6' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:01:01 GMT: Compiler call returned
+9 Apr 2019 19:02:15 GMT: diagnostics = javax.tools.DiagnosticCollector@8dc906
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1182a84
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+9 Apr 2019 19:02:15 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@5ea27a' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:02:15 GMT: Compiler call returned
+9 Apr 2019 19:02:31 GMT: diagnostics = javax.tools.DiagnosticCollector@2443ad
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@ca6d21
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:02:31 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@11b9acd' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:02:31 GMT: Compiler call returned
+9 Apr 2019 19:02:47 GMT: diagnostics = javax.tools.DiagnosticCollector@64ef72
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@ff69db
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:02:47 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@920e82' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:02:47 GMT: Compiler call returned
+9 Apr 2019 19:03:25 GMT: diagnostics = javax.tools.DiagnosticCollector@14e96c1
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1facbae
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:03:25 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@10d5472' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:03:25 GMT: Compiler call returned
+9 Apr 2019 19:03:31 GMT: diagnostics = javax.tools.DiagnosticCollector@1a8ed02
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@99f6b9
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:03:31 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@54952e' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:03:31 GMT: Compiler call returned
+9 Apr 2019 19:11:49 GMT: diagnostics = javax.tools.DiagnosticCollector@161ab4b
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@395331
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:11:49 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@e6b8e4' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:11:49 GMT: Compiler call returned
+9 Apr 2019 19:11:49 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@16b20cb
+9 Apr 2019 19:11:49 GMT:  Kind = ERROR
+9 Apr 2019 19:11:49 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 43 Msg = 'Syntax error on token "Font", delete this token'
+9 Apr 2019 19:11:53 GMT: diagnostics = javax.tools.DiagnosticCollector@faa30
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@14c561c
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:11:53 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@10884c2' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:11:53 GMT: Compiler call returned
+9 Apr 2019 19:11:53 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@12d36af
+9 Apr 2019 19:11:53 GMT:  Kind = ERROR
+9 Apr 2019 19:11:53 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:11:53 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@205589
+9 Apr 2019 19:11:53 GMT:  Kind = ERROR
+9 Apr 2019 19:11:53 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 28 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:11:53 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1223014
+9 Apr 2019 19:11:53 GMT:  Kind = ERROR
+9 Apr 2019 19:11:53 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 44 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:12:14 GMT: diagnostics = javax.tools.DiagnosticCollector@1f34e48
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@721501
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:12:14 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@7a33a2' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:12:14 GMT: Compiler call returned
+9 Apr 2019 19:12:14 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1973bea
+9 Apr 2019 19:12:14 GMT:  Kind = ERROR
+9 Apr 2019 19:12:14 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 9 Msg = 'StdDraw.Font cannot be resolved to a type'
+9 Apr 2019 19:12:14 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@bc17f4
+9 Apr 2019 19:12:14 GMT:  Kind = ERROR
+9 Apr 2019 19:12:14 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 36 Msg = 'StdDraw.Font cannot be resolved to a type'
+9 Apr 2019 19:12:14 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3c41bb
+9 Apr 2019 19:12:14 GMT:  Kind = ERROR
+9 Apr 2019 19:12:14 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 60 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:16:11 GMT: diagnostics = javax.tools.DiagnosticCollector@a66a74
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1b74ad2
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:16:11 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1d80262' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:16:11 GMT: Compiler call returned
+9 Apr 2019 19:16:11 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@17f71c9
+9 Apr 2019 19:16:11 GMT:  Kind = ERROR
+9 Apr 2019 19:16:11 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:16:11 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@f6a704
+9 Apr 2019 19:16:11 GMT:  Kind = ERROR
+9 Apr 2019 19:16:11 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 25 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:16:11 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@17d826a
+9 Apr 2019 19:16:11 GMT:  Kind = ERROR
+9 Apr 2019 19:16:11 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 41 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:17:30 GMT: diagnostics = javax.tools.DiagnosticCollector@7167b8
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1adf53c
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:17:30 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@13b52d7' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:17:30 GMT: Compiler call returned
+9 Apr 2019 19:17:30 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1b0d644
+9 Apr 2019 19:17:30 GMT:  Kind = ERROR
+9 Apr 2019 19:17:30 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 1 ColNo = 18 Msg = 'Syntax error on token "Object", ; expected after this token'
+9 Apr 2019 19:17:30 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@2939ac
+9 Apr 2019 19:17:30 GMT:  Kind = ERROR
+9 Apr 2019 19:17:30 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:17:30 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@ac3203
+9 Apr 2019 19:17:30 GMT:  Kind = ERROR
+9 Apr 2019 19:17:30 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 25 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:17:30 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@15850f0
+9 Apr 2019 19:17:30 GMT:  Kind = ERROR
+9 Apr 2019 19:17:30 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 41 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:17:34 GMT: diagnostics = javax.tools.DiagnosticCollector@3ec0ce
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@7cf878
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:17:34 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@b5f895' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:17:34 GMT: Compiler call returned
+9 Apr 2019 19:17:34 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@f05ceb
+9 Apr 2019 19:17:34 GMT:  Kind = ERROR
+9 Apr 2019 19:17:34 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:17:34 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@fe9c65
+9 Apr 2019 19:17:34 GMT:  Kind = ERROR
+9 Apr 2019 19:17:34 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 25 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:17:34 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@16aa9e4
+9 Apr 2019 19:17:34 GMT:  Kind = ERROR
+9 Apr 2019 19:17:34 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 41 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:20:59 GMT: diagnostics = javax.tools.DiagnosticCollector@1db55a6
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@7c0e0a
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:20:59 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@2dcd9e' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:20:59 GMT: Compiler call returned
+9 Apr 2019 19:20:59 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@be399e
+9 Apr 2019 19:20:59 GMT:  Kind = ERROR
+9 Apr 2019 19:20:59 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:20:59 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1390ce9
+9 Apr 2019 19:20:59 GMT:  Kind = ERROR
+9 Apr 2019 19:20:59 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 21 Msg = 'Font cannot be resolved'
+9 Apr 2019 19:20:59 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@91f9d4
+9 Apr 2019 19:20:59 GMT:  Kind = ERROR
+9 Apr 2019 19:20:59 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 37 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:21:44 GMT: diagnostics = javax.tools.DiagnosticCollector@17cb043
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1523073
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java]
+9 Apr 2019 19:21:44 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@6f7829' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:21:44 GMT: Compiler call returned
+9 Apr 2019 19:21:44 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@181e9d0
+9 Apr 2019 19:21:44 GMT:  Kind = ERROR
+9 Apr 2019 19:21:44 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java LineNo = 1 ColNo = 17 Msg = 'Syntax error on token "font", ; expected after this token'
+9 Apr 2019 19:21:44 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@10dfd55
+9 Apr 2019 19:21:44 GMT:  Kind = ERROR
+9 Apr 2019 19:21:44 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:21:44 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@f7f296
+9 Apr 2019 19:21:44 GMT:  Kind = ERROR
+9 Apr 2019 19:21:44 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 21 Msg = 'Font cannot be resolved'
+9 Apr 2019 19:21:44 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1c3769d
+9 Apr 2019 19:21:44 GMT:  Kind = ERROR
+9 Apr 2019 19:21:44 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 37 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:21:44 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@11cd69c
+9 Apr 2019 19:21:44 GMT:  Kind = ERROR
+9 Apr 2019 19:21:44 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java LineNo = 1 ColNo = 8 Msg = 'Only a type can be imported. java.awt.font resolves to a package'
+9 Apr 2019 19:21:47 GMT: diagnostics = javax.tools.DiagnosticCollector@2c8224
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@39e2e1
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java]
+9 Apr 2019 19:21:47 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1ac72b8' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:21:47 GMT: Compiler call returned
+9 Apr 2019 19:21:47 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@ee5f07
+9 Apr 2019 19:21:47 GMT:  Kind = ERROR
+9 Apr 2019 19:21:47 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:21:47 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@8bbf57
+9 Apr 2019 19:21:47 GMT:  Kind = ERROR
+9 Apr 2019 19:21:47 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 21 Msg = 'Font cannot be resolved'
+9 Apr 2019 19:21:47 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1425bde
+9 Apr 2019 19:21:47 GMT:  Kind = ERROR
+9 Apr 2019 19:21:47 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 37 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:21:47 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1bc1c7e
+9 Apr 2019 19:21:47 GMT:  Kind = ERROR
+9 Apr 2019 19:21:47 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java LineNo = 1 ColNo = 8 Msg = 'Only a type can be imported. java.awt.font resolves to a package'
+9 Apr 2019 19:22:03 GMT: diagnostics = javax.tools.DiagnosticCollector@c14493
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@17298a7
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java]
+9 Apr 2019 19:22:03 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@124cb80' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:22:03 GMT: Compiler call returned
+9 Apr 2019 19:22:03 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@9f58a2
+9 Apr 2019 19:22:03 GMT:  Kind = ERROR
+9 Apr 2019 19:22:03 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 9 Msg = 'Font cannot be resolved to a type'
+9 Apr 2019 19:22:03 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@15bddca
+9 Apr 2019 19:22:03 GMT:  Kind = ERROR
+9 Apr 2019 19:22:03 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 21 Msg = 'Font cannot be resolved'
+9 Apr 2019 19:22:03 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@18893f3
+9 Apr 2019 19:22:03 GMT:  Kind = ERROR
+9 Apr 2019 19:22:03 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 18 ColNo = 37 Msg = 'Font cannot be resolved to a variable'
+9 Apr 2019 19:22:03 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@b96927
+9 Apr 2019 19:22:03 GMT:  Kind = WARNING
+9 Apr 2019 19:22:03 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java LineNo = 1 ColNo = 8 Msg = 'The import java.awt.Font is never used'
+9 Apr 2019 19:22:20 GMT: diagnostics = javax.tools.DiagnosticCollector@43be35
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@96b8ed
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java]
+9 Apr 2019 19:22:20 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@ad1bce' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:22:21 GMT: Compiler call returned
+9 Apr 2019 19:22:21 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1ba1ece
+9 Apr 2019 19:22:21 GMT:  Kind = ERROR
+9 Apr 2019 19:22:21 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 26 Msg = 'The method createFont(int, java.io.InputStream) in the type java.awt.Font is not applicable for the arguments (int, java.lang.String)'
+9 Apr 2019 19:26:42 GMT: diagnostics = javax.tools.DiagnosticCollector@13af5f8
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1d144c3
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:26:42 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1d41d42' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:26:42 GMT: Compiler call returned
+9 Apr 2019 19:26:42 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1ab4760
+9 Apr 2019 19:26:42 GMT:  Kind = ERROR
+9 Apr 2019 19:26:42 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 26 Msg = 'The method createFont(int, java.io.InputStream) in the type java.awt.Font is not applicable for the arguments (int, java.lang.String)'
+9 Apr 2019 19:27:37 GMT: diagnostics = javax.tools.DiagnosticCollector@f88a5e
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@103b86e
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:27:37 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@30ee86' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:27:37 GMT: Compiler call returned
+9 Apr 2019 19:28:04 GMT: diagnostics = javax.tools.DiagnosticCollector@73a3c1
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1d91ab2
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:28:04 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@c89876' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:28:04 GMT: Compiler call returned
+9 Apr 2019 19:29:13 GMT: diagnostics = javax.tools.DiagnosticCollector@1260b09
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1baea8d
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:29:13 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@39fd36' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:29:13 GMT: Compiler call returned
+9 Apr 2019 19:29:53 GMT: diagnostics = javax.tools.DiagnosticCollector@cf9031
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1b9327a
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:29:53 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@d3d85c' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:29:53 GMT: Compiler call returned
+9 Apr 2019 19:30:09 GMT: diagnostics = javax.tools.DiagnosticCollector@925b8d
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@16af2d5
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:30:09 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1e0aa6f' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:30:09 GMT: Compiler call returned
+9 Apr 2019 19:30:09 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@15c411f
+9 Apr 2019 19:30:09 GMT:  Kind = ERROR
+9 Apr 2019 19:30:09 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 20 ColNo = 25 Msg = 'font cannot be resolved to a variable'
+9 Apr 2019 19:30:14 GMT: diagnostics = javax.tools.DiagnosticCollector@1a1434c
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@10a45df
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:30:14 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@12863f5' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:30:14 GMT: Compiler call returned
+9 Apr 2019 19:30:14 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1fdf51d
+9 Apr 2019 19:30:14 GMT:  Kind = WARNING
+9 Apr 2019 19:30:14 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 1 ColNo = 8 Msg = 'The import java.awt.Font is never used'
+9 Apr 2019 19:30:28 GMT: diagnostics = javax.tools.DiagnosticCollector@cba6d4
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@13f9690
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:30:28 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1d9fba6' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:30:28 GMT: Compiler call returned
+9 Apr 2019 19:33:07 GMT: diagnostics = javax.tools.DiagnosticCollector@1dd988d
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1d2ff30
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:33:07 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@177168b' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:33:07 GMT: Compiler call returned
+9 Apr 2019 19:33:07 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@ac1319
+9 Apr 2019 19:33:07 GMT:  Kind = ERROR
+9 Apr 2019 19:33:07 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 21 Msg = 'create cannot be resolved'
+9 Apr 2019 19:33:07 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@cbdfd9
+9 Apr 2019 19:33:07 GMT:  Kind = ERROR
+9 Apr 2019 19:33:07 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 34 Msg = 'PLAIN cannot be resolved to a variable'
+9 Apr 2019 19:33:31 GMT: diagnostics = javax.tools.DiagnosticCollector@189c05e
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1720c98
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:33:31 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@168972d' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:33:31 GMT: Compiler call returned
+9 Apr 2019 19:33:31 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@14ff968
+9 Apr 2019 19:33:31 GMT:  Kind = ERROR
+9 Apr 2019 19:33:31 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 21 Msg = 'create cannot be resolved'
+9 Apr 2019 19:33:47 GMT: diagnostics = javax.tools.DiagnosticCollector@4e4e39
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1c02e23
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:33:47 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1882fa7' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:33:47 GMT: Compiler call returned
+9 Apr 2019 19:33:47 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@5f0ecf
+9 Apr 2019 19:33:47 GMT:  Kind = ERROR
+9 Apr 2019 19:33:47 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 26 Msg = 'The method createFont(int, java.io.InputStream) in the type java.awt.Font is not applicable for the arguments (int, java.lang.String)'
+9 Apr 2019 19:34:46 GMT: diagnostics = javax.tools.DiagnosticCollector@10f6ce0
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@2e3a5b
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:34:46 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@c154df' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:34:46 GMT: Compiler call returned
+9 Apr 2019 19:34:46 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@dfd597
+9 Apr 2019 19:34:46 GMT:  Kind = ERROR
+9 Apr 2019 19:34:46 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 9 Msg = 'File cannot be resolved to a type'
+9 Apr 2019 19:34:46 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@728d97
+9 Apr 2019 19:34:46 GMT:  Kind = ERROR
+9 Apr 2019 19:34:46 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 19 ColNo = 29 Msg = 'file cannot be resolved to a type'
+9 Apr 2019 19:34:58 GMT: diagnostics = javax.tools.DiagnosticCollector@3f8881
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@14fa4d8
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:34:58 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1f1b7af' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:34:58 GMT: Compiler call returned
+9 Apr 2019 19:34:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@12aa1f2
+9 Apr 2019 19:34:58 GMT:  Kind = ERROR
+9 Apr 2019 19:34:58 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 2 ColNo = 8 Msg = 'The import java.awt.File cannot be resolved'
+9 Apr 2019 19:34:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@7e10f0
+9 Apr 2019 19:34:58 GMT:  Kind = ERROR
+9 Apr 2019 19:34:58 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 20 ColNo = 9 Msg = 'File cannot be resolved to a type'
+9 Apr 2019 19:34:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@8ab560
+9 Apr 2019 19:34:58 GMT:  Kind = ERROR
+9 Apr 2019 19:34:58 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 20 ColNo = 29 Msg = 'file cannot be resolved to a type'
+9 Apr 2019 19:35:25 GMT: diagnostics = javax.tools.DiagnosticCollector@6dd7de
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@85bd05
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:35:25 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1657ba9' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:35:25 GMT: Compiler call returned
+9 Apr 2019 19:35:25 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1c22a57
+9 Apr 2019 19:35:25 GMT:  Kind = ERROR
+9 Apr 2019 19:35:25 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 2 ColNo = 15 Msg = 'Syntax error on token "*", delete this token'
+9 Apr 2019 19:35:25 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@136963d
+9 Apr 2019 19:35:25 GMT:  Kind = ERROR
+9 Apr 2019 19:35:25 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 2 ColNo = 8 Msg = 'Only a type can be imported. java.io resolves to a package'
+9 Apr 2019 19:35:25 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@192fffe
+9 Apr 2019 19:35:25 GMT:  Kind = ERROR
+9 Apr 2019 19:35:25 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 20 ColNo = 9 Msg = 'File cannot be resolved to a type'
+9 Apr 2019 19:35:25 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1266e03
+9 Apr 2019 19:35:25 GMT:  Kind = ERROR
+9 Apr 2019 19:35:25 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 20 ColNo = 29 Msg = 'file cannot be resolved to a type'
+9 Apr 2019 19:36:23 GMT: diagnostics = javax.tools.DiagnosticCollector@88a2ec
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1e13f61
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:36:23 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@156e741' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:36:23 GMT: Compiler call returned
+9 Apr 2019 19:36:23 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@ba2a0a
+9 Apr 2019 19:36:23 GMT:  Kind = ERROR
+9 Apr 2019 19:36:23 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 20 ColNo = 29 Msg = 'file cannot be resolved to a type'
+9 Apr 2019 19:36:29 GMT: diagnostics = javax.tools.DiagnosticCollector@eabb3a
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@f7cefb
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:36:29 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@e65846' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:36:29 GMT: Compiler call returned
+9 Apr 2019 19:36:29 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@f22011
+9 Apr 2019 19:36:29 GMT:  Kind = ERROR
+9 Apr 2019 19:36:29 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 21 ColNo = 21 Msg = 'Unhandled exception type java.awt.FontFormatException'
+9 Apr 2019 19:36:29 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1390f5
+9 Apr 2019 19:36:29 GMT:  Kind = ERROR
+9 Apr 2019 19:36:29 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 21 ColNo = 21 Msg = 'Unhandled exception type java.io.IOException'
+9 Apr 2019 19:36:47 GMT: diagnostics = javax.tools.DiagnosticCollector@1a7ccf5
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@f75eb5
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:36:47 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@19700a3' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:36:47 GMT: Compiler call returned
+9 Apr 2019 19:36:47 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1aa9b45
+9 Apr 2019 19:36:47 GMT:  Kind = ERROR
+9 Apr 2019 19:36:47 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 21 ColNo = 38 Msg = 'PLAIN cannot be resolved to a variable'
+9 Apr 2019 19:36:51 GMT: diagnostics = javax.tools.DiagnosticCollector@1781c1f
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1466f8
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:36:51 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@11409eb' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:36:51 GMT: Compiler call returned
+9 Apr 2019 19:36:51 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1ca44ab
+9 Apr 2019 19:36:51 GMT:  Kind = ERROR
+9 Apr 2019 19:36:51 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 21 ColNo = 21 Msg = 'Unhandled exception type java.awt.FontFormatException'
+9 Apr 2019 19:36:51 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1725023
+9 Apr 2019 19:36:51 GMT:  Kind = ERROR
+9 Apr 2019 19:36:51 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 21 ColNo = 21 Msg = 'Unhandled exception type java.io.IOException'
+9 Apr 2019 19:37:41 GMT: diagnostics = javax.tools.DiagnosticCollector@acc66c
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1b2b345
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:37:41 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@19fbe95' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:37:41 GMT: Compiler call returned
+9 Apr 2019 19:37:41 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@809e44
+9 Apr 2019 19:37:41 GMT:  Kind = ERROR
+9 Apr 2019 19:37:41 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 23 ColNo = 9 Msg = 'GraphicsEnvironment cannot be resolved to a type'
+9 Apr 2019 19:37:41 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@fe09dc
+9 Apr 2019 19:37:41 GMT:  Kind = ERROR
+9 Apr 2019 19:37:41 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 23 ColNo = 34 Msg = 'GraphicsEnvironment cannot be resolved'
+9 Apr 2019 19:38:11 GMT: diagnostics = javax.tools.DiagnosticCollector@10f40c4
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1f95992
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:38:11 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@ee059b' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:38:11 GMT: Compiler call returned
+9 Apr 2019 19:38:11 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@13d9c7c
+9 Apr 2019 19:38:11 GMT:  Kind = ERROR
+9 Apr 2019 19:38:11 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 22 ColNo = 21 Msg = 'Unhandled exception type java.awt.FontFormatException'
+9 Apr 2019 19:38:11 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@12cbe15
+9 Apr 2019 19:38:11 GMT:  Kind = ERROR
+9 Apr 2019 19:38:11 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 22 ColNo = 21 Msg = 'Unhandled exception type java.io.IOException'
+9 Apr 2019 19:40:24 GMT: diagnostics = javax.tools.DiagnosticCollector@1a54696
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@afe3af
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:40:24 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@133732e' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:40:24 GMT: Compiler call returned
+9 Apr 2019 19:40:24 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1a727
+9 Apr 2019 19:40:24 GMT:  Kind = ERROR
+9 Apr 2019 19:40:24 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 25 ColNo = 59 Msg = 'game cannot be resolved'
+9 Apr 2019 19:40:24 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@122a34f
+9 Apr 2019 19:40:24 GMT:  Kind = ERROR
+9 Apr 2019 19:40:24 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'FontFormatException cannot be resolved to a type'
+9 Apr 2019 19:40:24 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1916c77
+9 Apr 2019 19:40:24 GMT:  Kind = ERROR
+9 Apr 2019 19:40:24 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 45 Msg = 'IOException cannot be resolved to a type'
+9 Apr 2019 19:40:39 GMT: diagnostics = javax.tools.DiagnosticCollector@193afac
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@114a53b
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:40:39 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@5d42ee' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:40:39 GMT: Compiler call returned
+9 Apr 2019 19:40:39 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@bbac2c
+9 Apr 2019 19:40:39 GMT:  Kind = ERROR
+9 Apr 2019 19:40:39 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 25 ColNo = 59 Msg = 'Cannot make a static reference to the non-static method getClass() from the type java.lang.Object'
+9 Apr 2019 19:40:39 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@48a463
+9 Apr 2019 19:40:39 GMT:  Kind = ERROR
+9 Apr 2019 19:40:39 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'FontFormatException cannot be resolved to a type'
+9 Apr 2019 19:40:39 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@96edf6
+9 Apr 2019 19:40:39 GMT:  Kind = ERROR
+9 Apr 2019 19:40:39 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 45 Msg = 'IOException cannot be resolved to a type'
+9 Apr 2019 19:40:50 GMT: diagnostics = javax.tools.DiagnosticCollector@1447b30
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@d80184
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:40:50 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1ec4f10' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:40:50 GMT: Compiler call returned
+9 Apr 2019 19:40:50 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1ce5a61
+9 Apr 2019 19:40:50 GMT:  Kind = ERROR
+9 Apr 2019 19:40:50 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 25 ColNo = 59 Msg = 'The method getResourceAsStream(java.lang.String) is undefined for the type Interface'
+9 Apr 2019 19:40:50 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@109a4ec
+9 Apr 2019 19:40:50 GMT:  Kind = ERROR
+9 Apr 2019 19:40:50 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'FontFormatException cannot be resolved to a type'
+9 Apr 2019 19:40:50 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1f6405a
+9 Apr 2019 19:40:50 GMT:  Kind = ERROR
+9 Apr 2019 19:40:50 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 45 Msg = 'IOException cannot be resolved to a type'
+9 Apr 2019 19:41:17 GMT: diagnostics = javax.tools.DiagnosticCollector@11b533b
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1854783
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:41:17 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@72a8c' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:41:17 GMT: Compiler call returned
+9 Apr 2019 19:41:17 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@19086
+9 Apr 2019 19:41:17 GMT:  Kind = ERROR
+9 Apr 2019 19:41:17 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'FontFormatException cannot be resolved to a type'
+9 Apr 2019 19:41:17 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@16f4877
+9 Apr 2019 19:41:17 GMT:  Kind = ERROR
+9 Apr 2019 19:41:17 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 45 Msg = 'IOException cannot be resolved to a type'
+9 Apr 2019 19:41:40 GMT: diagnostics = javax.tools.DiagnosticCollector@1207972
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@9b01a9
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:41:40 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1f07ee7' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:41:40 GMT: Compiler call returned
+9 Apr 2019 19:41:40 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@a6ecb9
+9 Apr 2019 19:41:40 GMT:  Kind = ERROR
+9 Apr 2019 19:41:40 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'Multi-catch parameters are not allowed for source level below 1.7'
+9 Apr 2019 19:41:40 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1afd9d3
+9 Apr 2019 19:41:40 GMT:  Kind = ERROR
+9 Apr 2019 19:41:40 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 46 Msg = 'Syntax error on token ")", Block expected after this token'
+9 Apr 2019 19:41:58 GMT: diagnostics = javax.tools.DiagnosticCollector@1483ec1
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@ea9e1
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:41:58 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@e01f7a' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:41:58 GMT: Compiler call returned
+9 Apr 2019 19:41:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@e968fa
+9 Apr 2019 19:41:58 GMT:  Kind = ERROR
+9 Apr 2019 19:41:58 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'Multi-catch parameters are not allowed for source level below 1.7'
+9 Apr 2019 19:41:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1fd6c06
+9 Apr 2019 19:41:58 GMT:  Kind = ERROR
+9 Apr 2019 19:41:58 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'IOException cannot be resolved to a type'
+9 Apr 2019 19:41:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@f28a6a
+9 Apr 2019 19:41:58 GMT:  Kind = ERROR
+9 Apr 2019 19:41:58 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 25 Msg = 'FontFormatException cannot be resolved to a type'
+9 Apr 2019 19:41:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@f2cce9
+9 Apr 2019 19:41:58 GMT:  Kind = ERROR
+9 Apr 2019 19:41:58 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'No exception of type java.lang.Object can be thrown; an exception type must be a subclass of Throwable'
+9 Apr 2019 19:42:45 GMT: diagnostics = javax.tools.DiagnosticCollector@478251
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1f11999
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:42:45 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@ca085' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:42:45 GMT: Compiler call returned
+9 Apr 2019 19:42:45 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@37153e
+9 Apr 2019 19:42:45 GMT:  Kind = ERROR
+9 Apr 2019 19:42:45 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'Multi-catch parameters are not allowed for source level below 1.7'
+9 Apr 2019 19:42:45 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@351e27
+9 Apr 2019 19:42:45 GMT:  Kind = ERROR
+9 Apr 2019 19:42:45 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'IOException cannot be resolved to a type'
+9 Apr 2019 19:42:45 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1e8a64f
+9 Apr 2019 19:42:45 GMT:  Kind = ERROR
+9 Apr 2019 19:42:45 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 25 Msg = 'FontFormatException cannot be resolved to a type'
+9 Apr 2019 19:42:45 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1fba980
+9 Apr 2019 19:42:45 GMT:  Kind = ERROR
+9 Apr 2019 19:42:45 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 26 ColNo = 13 Msg = 'No exception of type java.lang.Object can be thrown; an exception type must be a subclass of Throwable'
+9 Apr 2019 19:42:45 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1cbd924
+9 Apr 2019 19:42:45 GMT:  Kind = ERROR
+9 Apr 2019 19:42:45 GMT: Name = C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java LineNo = 27 ColNo = 10 Msg = 'The method printStackTrace() is undefined for the type java.lang.Object'
+9 Apr 2019 19:51:52 GMT: diagnostics = javax.tools.DiagnosticCollector@760d0f
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@9b3e5c
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Collisions.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EnemyEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\PlayerEntity.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\UserInput.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+9 Apr 2019 19:51:52 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@d7c171' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+9 Apr 2019 19:51:52 GMT: Compiler call returned
