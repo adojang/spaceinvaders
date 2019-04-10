@@ -75,7 +75,7 @@ public class PlayerEntity
         
         if(UserInput.checkKeyPressed("RIGHT") == true && xPos < 1024) xPos = xPos + velocity;
         if(UserInput.checkKeyPressed("LEFT") == true && xPos > 0) xPos = xPos - velocity;
-        if(UserInput.checkKeyPressed("UP") == true && yPos < 700) yPos = yPos + velocity;
+        if(UserInput.checkKeyPressed("UP") == true && yPos < 200) yPos = yPos + velocity;
         if(UserInput.checkKeyPressed("DOWN") == true && yPos > 0) yPos = yPos - velocity;
         
         

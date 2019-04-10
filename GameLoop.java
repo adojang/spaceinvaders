@@ -2,12 +2,23 @@ public class GameLoop
 {
     
     public static PlayerEntity player;
-    public static int missileCount = 10;
+    
+    public static int missileCount = 100;
     public static MissileEntity[] missiles = new MissileEntity[missileCount];
+    public static int loopCounter = 0;
+    public static int missileRapidSpeed = 15;
+    public static boolean missileTime = true;
+    
     public static int enemyCount = 5;
     public static EnemyEntity[][] enemies = new EnemyEntity[enemyCount][enemyCount];
-    public static int loopCycles = 0;
-    public static boolean missileTime = true;
+    
+    public static PowerUpEntity[] powerUps = new PowerUpEntity[10];
+    public static int maxPowerUpCount = 10;
+    public static int powerUpActive = 0;
+    public static boolean activePowerUp = false;
+    public static int powerUpCounter = 0;
+    public static int powerUpTime = 200;
+    
     
     public static void runGameLoop()
     {
@@ -36,19 +47,41 @@ public class GameLoop
                 
                 entityMovement();
                 
-                hitDetection(player, missiles, enemies);
+                createPowerUps();
+                
+                hitDetection(player, missiles, enemies, powerUps);
+                
+                activatePowerUps();
                 
                 updateScreen();
                 
-                loopCycles++;
+                loopCounter++;
                 
-                if(loopCycles == 15)
+                if(loopCounter >= missileRapidSpeed)
                 {
-                    loopCycles = 0;
+                    loopCounter = 0;
                     missileTime = true;
                 }
                 
+                if(activePowerUp == true)
+                {
+                    powerUpCounter++;
+                    if(powerUpCounter == powerUpTime)
+                    {
+                        activePowerUp = false;
+                        powerUpActive = 0;
+                        missileRapidSpeed = 15;
+                    }
+                }
+                
+                
                 if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+                
+                //bugchecking
+                StdDraw.text(500,600,Boolean.toString(activePowerUp));
+                StdDraw.text(400,600,Integer.toString(powerUpCounter));
+                //StdDraw.text(300,600,Boolean.toString(missileTime));
+                //bugchecking
                 
                 StdDraw.show();
                 StdDraw.pause(10); //games speed
@@ -58,6 +91,8 @@ public class GameLoop
                  Interface.gameOver();
                  break;
                  }*/
+                
+                
                 
             }// While in active game, gameState = 1
             
@@ -96,6 +131,15 @@ public class GameLoop
             }
 
         }//enemy creation
+        
+        for(int i = 0; i < 10; i++)
+        {
+            
+            powerUps[i] = new PowerUpEntity("powerUpChar.png", 0, 0, 30, 30, 0, false);
+            
+        }//missiles creation
+        
+        
   
     }//initialiseEntities
     
@@ -179,13 +223,62 @@ public class GameLoop
             
         }
         
+        for(int i = 0; i < maxPowerUpCount; i++)
+        {
+            
+            if(powerUps[i].getActive() == true) Interface.updatePositions(powerUps[i].getFilename(), powerUps[i].getX(), powerUps[i].getY(), powerUps[i].getWidth(), powerUps[i].getHeight(), 0);
+            
+        }
+        
     }//updateScreen
     
-    public static void hitDetection(PlayerEntity player, MissileEntity[] missiles, EnemyEntity[][] ememies)
+    public static void hitDetection(PlayerEntity player, MissileEntity[] missiles, EnemyEntity[][] ememies, PowerUpEntity[] powerUps)
     {
         
-        Collisions.detectHits(player, missiles, enemies);
+        Collisions.detectHits(player, missiles, enemies, powerUps);
         
     }//hitDetection
+    
+    public static void createPowerUps()
+    {
+        
+        if(Math.random() < 0.001)
+        {
+            
+            for(int i = 0; i < maxPowerUpCount; i++)
+            {
+                
+                if(powerUps[i].getActive() == false)
+                {
+                    
+                    powerUps[i] = PowerUpEntity.create();
+                    System.out.println(powerUps[i].getPowerUpType());
+                    break;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }//checkPowerUps
+    
+    public static void activatePowerUps()
+    {
+        
+        if(powerUpActive == 2)
+        {
+            
+            missileRapidSpeed = 2;
+
+        }
+        if(powerUpActive == 3)
+        {
+            
+            
+            
+        }
+    
+    }//activatePowerUps
 
 }//GameLoop

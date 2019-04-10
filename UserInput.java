@@ -29,18 +29,6 @@ public class UserInput
         keys[7] = "NULL";
         keys[8] = "NULL";
         
-        /*if(StdDraw.isKeyPressed(32)) return "SPACE";
-        if(StdDraw.isKeyPressed(65)) return "LEFT";
-        if(StdDraw.isKeyPressed(68)) return "RIGHT";
-        if(StdDraw.isKeyPressed(77)) return "MENU";
-        if(StdDraw.isKeyPressed(87)) return "UP";
-        if(StdDraw.isKeyPressed(81)) return "QUIT";
-        if(StdDraw.isKeyPressed(79)) return "ROTATELEFT";
-        if(StdDraw.isKeyPressed(80)) return "ROTATERIGHT";
-        if(StdDraw.isKeyPressed(83)) return "DOWN";
-        
-        return "NULL";*/
-        
         if(StdDraw.isKeyPressed(32)) keys[0] = "SPACE";
         if(StdDraw.isKeyPressed(65)) keys[1] = "LEFT";
         if(StdDraw.isKeyPressed(68)) keys[2] = "RIGHT";

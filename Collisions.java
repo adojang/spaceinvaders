@@ -45,7 +45,7 @@ public class Collisions
    
     }//hitDetection
     
-    public static void detectHits(PlayerEntity player, MissileEntity[] missiles, EnemyEntity[][] enemies)
+    public static void detectHits(PlayerEntity player, MissileEntity[] missiles, EnemyEntity[][] enemies, PowerUpEntity[] powerUps)
     {
         
         for(int i = 0; i < GameLoop.missileCount; i++)
@@ -79,6 +79,23 @@ public class Collisions
                 
             }//j
            
+        }//i
+        
+        for(int i = 0; i < GameLoop.maxPowerUpCount; i++)
+        {
+            
+            if(hitDetection(  player.getX(), player.getY(), powerUps[i].getX(), powerUps[i].getY()    ) == true  && powerUps[i].getActive() == true       )
+            {
+                
+                StdDraw.text(300,400,"POWERUP");
+                
+                GameLoop.powerUpActive = powerUps[i].getPowerUpType();
+                powerUps[i].setActive(false);
+                GameLoop.activePowerUp = true;
+                GameLoop.powerUpCounter = 0;
+                
+            }//check for player and power ups
+                
         }//i
         
     }//detectHits
