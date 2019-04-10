@@ -11,70 +11,66 @@ public class GameLoop
     
     public static void runGameLoop()
     {
-      //Main Menu Start
-        while(UserInput.checkKeyPressed("SPACE") == false)
-        {
-         
-          
-          
-          
-          
-            UserInput.checkUserInput();
-            Interface.updateMenu();
-            if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
-            
-        }
-        /* Main Menu End
-         * GameLoop Start */
         
-        initialiseEntities();
-        
-        while(UserInput.checkKeyPressed("QUIT") == false)
+        while(true)
         {
             
-            StdDraw.clear();
+            initialiseEntities();
             
-            UserInput.checkUserInput();
-            
-            entityMovement();
-            
-            hitDetection(player, missiles, enemies);
-    
-            updateScreen();
-            
-            
+            while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
+            {
+                
+                UserInput.checkUserInput();
+                Interface.updateMenu();
+                if(UserInput.checkKeyPressed("SPACE") == true) Cosmic.gameState = 1;
+                if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+                
+            }// Main Menu, gameState = 0
 
-
-            for(int i = 0; i < missileCount; i++)
+            while(/*UserInput.checkKeyPressed("QUIT") == false*/ Cosmic.gameState == 1)
             {
                 
-                StdDraw.text(200,20*i+100, Integer.toString(i) + Boolean.toString(missiles[i].getActive()));
+                StdDraw.clear();
                 
+                UserInput.checkUserInput();
                 
-            }
+                entityMovement();
+                
+                hitDetection(player, missiles, enemies);
+                
+                updateScreen();
+                
+                loopCycles++;
+                
+                if(loopCycles == 15)
+                {
+                    loopCycles = 0;
+                    missileTime = true;
+                }
+                
+                if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+                
+                StdDraw.show();
+                StdDraw.pause(10); //games speed
+                
+                /*if (UserInput.checkKeyPressed("SCREENSHOT") == true)
+                 {
+                 Interface.gameOver();
+                 break;
+                 }*/
+                
+            }// While in active game, gameState = 1
             
-                
-            loopCycles++;
-            if(loopCycles == 15)
+            if(Cosmic.gameState == 2)
             {
-                loopCycles = 0;
-                missileTime = true;
-            }
+                
+                Interface.gameOver();
+                StdDraw.pause(1000);
+                Cosmic.gameState = 0;
+                
+            }//check if game over screen
             
-            StdDraw.show();
-            StdDraw.pause(10); //games speed
-           
-            if (UserInput.checkKeyPressed("SCREENSHOT") == true) 
-            {
-              Interface.gameOver();
-              break;
-            }
-            
-        }// While game is still running (quit == false)
-        
-        
-       if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
-        
+        }//while true, able to switch between gamestates
         
     }// RunGameLoop
     
@@ -99,7 +95,7 @@ public class GameLoop
                 
             }
 
-        }//entity creation
+        }//enemy creation
   
     }//initialiseEntities
     
@@ -129,14 +125,11 @@ public class GameLoop
                     missiles[i].setActive(true);
                     missiles[i].setX((double) player.getX());
                     missiles[i].setY((double) player.getY());
-                    
                     missileNumber = i;
-                    
                     break;
                     
                 }
-            }
-            
+            }// Check if there are any missiles available to shoot and sets them up
             
             if(player.getRotation() < 0)
             {
@@ -157,13 +150,9 @@ public class GameLoop
                 
             }
             
-
             missileTime = false;
             
-        }//check if user shot and if there are missiles available
-        
-        
-        
+        }//check if user presses space and if a missile can be shot
         
     }//entityMovement
     

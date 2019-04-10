@@ -40,7 +40,6 @@ public class Collisions
             
         }else
         {
-            
             return false;
         }
    
@@ -72,12 +71,9 @@ public class Collisions
                     if(hitDetection(  player.getX(), player.getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
                     {
                         
-                        StdDraw.text(800,200,"HIT");
-                        Interface.gameOver();
+                        Cosmic.gameState = 2;
                         
                     }//check for player and enemies
-                    
-                    
                     
                 }//k
                 
@@ -85,7 +81,6 @@ public class Collisions
            
         }//i
         
-
     }//detectHits
     
-}
+}//Collisions

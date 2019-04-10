@@ -6,7 +6,7 @@ public class EnemyEntity
     private int width;
     private int height;
     private String filename;
-    private static int velocity = 2;
+    private static int velocity = 3;
     private boolean active;
     private static int movementState = 1;
     private static int cycles = 0;

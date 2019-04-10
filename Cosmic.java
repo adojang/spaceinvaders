@@ -1,12 +1,23 @@
-
 public class Cosmic
 {
+    
+    public static int gameState = 0;
+    /*
+        0 - menu
+        1 - game
+        3 - game over screen
+    */
     
     public static void main(String[] args)
     {
         
         initialise();
+        
+
+        
         GameLoop.runGameLoop();
+        
+        
         
     }//main
     
