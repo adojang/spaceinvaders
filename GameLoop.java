@@ -66,7 +66,7 @@ public class GameLoop
            
             if (UserInput.checkKeyPressed("SCREENSHOT") == true) 
             {
-              Interface.GameOver();
+              Interface.gameOver();
               break;
             }
             

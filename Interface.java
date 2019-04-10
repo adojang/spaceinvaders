@@ -20,11 +20,11 @@ public class Interface
         
     }//updateGameScreen
     
-    public static void GameOver()
+    public static void gameOver()
     {
       //Will Add a Nice screen later. This is temp.
       
-     StdDraw.clear();
+      StdDraw.clear();
       Font font = new Font("Arial", Font.BOLD, 60);
       StdDraw.setFont(font);
       StdDraw.text(512, 350, "GAME OVER");

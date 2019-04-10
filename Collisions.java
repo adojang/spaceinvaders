@@ -67,7 +67,17 @@ public class Collisions
                         missiles[i].setY(0);
                         enemies[j][k].setActive(false);
                         
-                    }
+                    }//check for missiles and enemies
+                    
+                    if(hitDetection(  player.getX(), player.getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
+                    {
+                        
+                        StdDraw.text(800,200,"HIT");
+                        Interface.gameOver();
+                        
+                    }//check for player and enemies
+                    
+                    
                     
                 }//k
                 
@@ -78,21 +88,4 @@ public class Collisions
 
     }//detectHits
     
-    public static boolean ShipCrash(PlayerEntity player, EnemyEntity[][] enemies)
-      
-    {
-      /*
-       * if player and enemy are within 15 pixels of eachother, then crash happens.
-      
-      
-      return true;
-      else return false
-      
-     
-    }
-    //Detects if the player ship touches an enemy ship. Used to display GAMEOVER screen.
-    
- */
-      return true; // Remove this after you've written the function.
-    }
 }
