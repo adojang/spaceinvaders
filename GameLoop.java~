@@ -11,15 +11,21 @@ public class GameLoop
     
     public static void runGameLoop()
     {
-
+      //Main Menu Start
         while(UserInput.checkKeyPressed("SPACE") == false)
         {
-            
+         
+          
+          
+          
+          
             UserInput.checkUserInput();
             Interface.updateMenu();
             if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
             
-        }//while in the menu
+        }
+        /* Main Menu End
+         * GameLoop Start */
         
         initialiseEntities();
         
@@ -58,11 +64,11 @@ public class GameLoop
             StdDraw.show();
             StdDraw.pause(10); //games speed
             
-        }//while in the game
+        }// While game is still running (quit == false)
         
         System.exit(1);
         
-    }//runGameLoop
+    }// RunGameLoop
     
     public static void initialiseEntities()
     {

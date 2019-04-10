@@ -8,13 +8,13 @@ public class Interface
         
     }//updateGameScreen
     
+    //DRAW MAIN MENU
     public static void updateMenu()
     {
-        
+          //Background picture source: https://unsplash.com/photos/pzwy4dL_huU  -Photo by Ahmed Sharyaan on Unsplash
+          //This image is free for commericial use
         StdDraw.clear();
-        
-        StdDraw.text(512,350,"MENU");
-        
+        StdDraw.picture(512, 350, "background1.jpeg", 1024, 700, 0);     
         StdDraw.show();
         
     }//updateGameScreen

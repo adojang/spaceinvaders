@@ -39,7 +39,7 @@ public class GameLoop
             entityMovement();
             
             hitDetection(player, missiles, enemies);
-            
+    
             updateScreen();
             
             
@@ -63,10 +63,18 @@ public class GameLoop
             
             StdDraw.show();
             StdDraw.pause(10); //games speed
+           
+            if (UserInput.checkKeyPressed("SCREENSHOT") == true) 
+            {
+              Interface.GameOver();
+              break;
+            }
             
         }// While game is still running (quit == false)
         
-        System.exit(1);
+        
+       if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+        
         
     }// RunGameLoop
     
