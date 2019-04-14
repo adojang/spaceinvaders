@@ -1,3 +1,4 @@
+import java.awt.Font;
 public class Interface
 {
 
@@ -11,6 +12,12 @@ public class Interface
     //DRAW MAIN MENU
     public static void updateMenu()
     {
+      //Set Gamefonts
+      String type = "Monospaced";
+      Font f1 = new Font(type, Font.PLAIN, 30);
+      StdDraw.setFont(f1);
+      
+      StdDraw.show();
           //Background picture source: https://unsplash.com/photos/pzwy4dL_huU  -Photo by Ahmed Sharyaan on Unsplash
           //This image is free for commericial use
         StdDraw.clear();
@@ -18,6 +25,21 @@ public class Interface
         StdDraw.show();
         
     }//updateGameScreen
+    
+    public static void gameOver()
+    {
+      //Will Add a Nice screen later. This is temp.
+      //String score = toString(Collisions.score(0));
+      
+      StdDraw.clear();
+      //String score = String.valueOf(Collisions.score(0));
+      Font gfont = new Font("Monospaced", Font.BOLD, 60);
+      StdDraw.setFont(gfont);
+      StdDraw.text(512, 350, "GAME OVER");
+      StdDraw.text(512, 200, String.valueOf(Collisions.score(0)));
+      StdDraw.show();
+      
+    }
 
 
 

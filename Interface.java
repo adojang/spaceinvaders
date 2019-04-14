@@ -12,23 +12,59 @@ public class Interface
     //DRAW MAIN MENU
     public static void updateMenu()
     {
-          //Background picture source: https://unsplash.com/photos/pzwy4dL_huU  -Photo by Ahmed Sharyaan on Unsplash
-          //This image is free for commericial use
-        StdDraw.clear();
-        StdDraw.picture(512, 350, "background1.jpeg", 1024, 700, 0);     
+      //Set Gamefonts
+      String type = "Monospaced";
+      Font f0 = new Font(type, Font.BOLD, 80);
+      Font f1 = new Font(type, Font.BOLD, 50);
+      Font f2 = new Font(type, Font.BOLD, 40);
+      StdDraw.setFont(f0);
+      StdDraw.setPenColor(243, 241, 239);
+      
+      //StdDraw.show();
+      //Background picture source: https://unsplash.com/photos/pzwy4dL_huU  -Photo by Ahmed Sharyaan on Unsplash
+      //This image is free for commericial use
+      StdDraw.clear();
+      StdDraw.picture(512, 350, "b1.jpeg", 1024, 700, 0);     
+      StdDraw.text(512, 600, "COSMIC CROCODILES");
+      StdDraw.setFont(f1);
+      StdDraw.textLeft(650, 500, "Controls");
+      StdDraw.textLeft(600, 450, "W - Up");
+      StdDraw.textLeft(600, 400, "A - Left");
+      StdDraw.textLeft(600, 350, "S - Down");
+      StdDraw.textLeft(600, 300, "D - Right");
+      StdDraw.textLeft(600, 250, "P - Screenshot");
+      StdDraw.textLeft(600, 200, "Q - Quit");
+      StdDraw.textLeft(600, 150, "<Space>");
+       StdDraw.textLeft(600, 100, "to shoot");
+       
+       
         StdDraw.show();
-        
+      StdDraw.setFont(f2);
     }//updateGameScreen
     
     public static void gameOver()
     {
-      //Will Add a Nice screen later. This is temp.
-      
-      StdDraw.clear();
-      Font font = new Font("Arial", Font.BOLD, 60);
-      StdDraw.setFont(font);
+
+       // https://wallpaperaccess.com/full/112282.png
+       StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 180); 
+      Font gfont = new Font("Monospaced", Font.BOLD, 60);
+      StdDraw.setFont(gfont);
       StdDraw.text(512, 350, "GAME OVER");
+      StdDraw.text(512, 200, "SCORE:" + " " + String.valueOf(Collisions.score(0)));
       StdDraw.show();
+      
+      for(int i=5;i>=-1;i--)
+      {
+       StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 180); 
+        StdDraw.text(512, 350, "GAME OVER");
+       StdDraw.text(512, 200, "SCORE:" + " " + String.valueOf(Collisions.score(0)));
+       StdDraw.text(512, 100, "Restart in... " + i);
+       StdDraw.pause(1000);
+       StdDraw.show();
+      
+      }
+      
+
       
     }
 

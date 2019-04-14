@@ -18,6 +18,7 @@ public class GameLoop
     public static boolean activePowerUp = false;
     public static int powerUpCounter = 0;
     public static int powerUpTime = 200;
+
     
     
     public static void runGameLoop()
@@ -42,6 +43,9 @@ public class GameLoop
             {
                 
                 StdDraw.clear();
+                // https://wallpaperaccess.com/full/112282.png
+                StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 0); 
+                StdDraw.setPenColor(StdDraw.WHITE);
                 
                 UserInput.checkUserInput();
                 
@@ -86,22 +90,21 @@ public class GameLoop
                 StdDraw.show();
                 StdDraw.pause(10); //games speed
                 
-                /*if (UserInput.checkKeyPressed("SCREENSHOT") == true)
+                if (UserInput.checkKeyPressed("SCREENSHOT") == true)
                  {
-                 Interface.gameOver();
-                 break;
-                 }*/
+                 Cosmic.gameState = 3;
+                 }
                 
                 
                 
             }// While in active game, gameState = 1
             
-            if(Cosmic.gameState == 2)
+            if(Cosmic.gameState == 3)
             {
-                
                 Interface.gameOver();
-                StdDraw.pause(1000);
                 Cosmic.gameState = 0;
+                runGameLoop();
+              
                 
             }//check if game over screen
             
@@ -202,6 +205,9 @@ public class GameLoop
     
     public static void updateScreen()
     {
+      
+      //HUD
+      StdDraw.textLeft(10, 680, "SCORE: " + Collisions.score(0));
         
         Interface.updatePositions(player.getFilename(), player.getX(), player.getY(), player.getWidth(), player.getHeight(), player.getRotation());
         

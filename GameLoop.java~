@@ -2,71 +2,114 @@ public class GameLoop
 {
     
     public static PlayerEntity player;
-    public static int missileCount = 10;
+    
+    public static int missileCount = 100;
     public static MissileEntity[] missiles = new MissileEntity[missileCount];
+    public static int loopCounter = 0;
+    public static int missileRapidSpeed = 15;
+    public static boolean missileTime = true;
+    
     public static int enemyCount = 5;
     public static EnemyEntity[][] enemies = new EnemyEntity[enemyCount][enemyCount];
-    public static int loopCycles = 0;
-    public static boolean missileTime = true;
+    
+    public static PowerUpEntity[] powerUps = new PowerUpEntity[10];
+    public static int maxPowerUpCount = 10;
+    public static int powerUpActive = 0;
+    public static boolean activePowerUp = false;
+    public static int powerUpCounter = 0;
+    public static int powerUpTime = 200;
+
+    
     
     public static void runGameLoop()
     {
-      //Main Menu Start
-        while(UserInput.checkKeyPressed("SPACE") == false)
-        {
-         
-          
-          
-          
-          
-            UserInput.checkUserInput();
-            Interface.updateMenu();
-            if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
-            
-        }
-        /* Main Menu End
-         * GameLoop Start */
         
-        initialiseEntities();
-        
-        while(UserInput.checkKeyPressed("QUIT") == false)
+        while(true)
         {
             
-            StdDraw.clear();
+            initialiseEntities();
             
-            UserInput.checkUserInput();
-            
-            entityMovement();
-            
-            hitDetection(player, missiles, enemies);
-            
-            updateScreen();
-            
-            
-
-
-            for(int i = 0; i < missileCount; i++)
+            while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
             {
                 
-                StdDraw.text(200,20*i+100, Integer.toString(i) + Boolean.toString(missiles[i].getActive()));
+                UserInput.checkUserInput();
+                Interface.updateMenu();
+                if(UserInput.checkKeyPressed("SPACE") == true) Cosmic.gameState = 1;
+                if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
                 
-                
-            }
-            
-                
-            loopCycles++;
-            if(loopCycles == 15)
+            }// Main Menu, gameState = 0
+
+            while(/*UserInput.checkKeyPressed("QUIT") == false*/ Cosmic.gameState == 1)
             {
-                loopCycles = 0;
-                missileTime = true;
-            }
+                
+                StdDraw.clear();
+                // https://wallpaperaccess.com/full/112282.png
+                StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 0); 
+                StdDraw.setPenColor(StdDraw.WHITE);
+                
+                UserInput.checkUserInput();
+                
+                entityMovement();
+                
+                createPowerUps();
+                
+                hitDetection(player, missiles, enemies, powerUps);
+                
+                activatePowerUps();
+                
+                updateScreen();
+                
+                loopCounter++;
+                
+                if(loopCounter >= missileRapidSpeed)
+                {
+                    loopCounter = 0;
+                    missileTime = true;
+                }
+                
+                if(activePowerUp == true)
+                {
+                    powerUpCounter++;
+                    if(powerUpCounter == powerUpTime)
+                    {
+                        activePowerUp = false;
+                        powerUpActive = 0;
+                        missileRapidSpeed = 15;
+                    }
+                }
+                
+                
+                if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+                
+                //bugchecking
+                StdDraw.text(500,600,Boolean.toString(activePowerUp));
+                StdDraw.text(400,600,Integer.toString(powerUpCounter));
+                //StdDraw.text(300,600,Boolean.toString(missileTime));
+                //bugchecking
+                
+                StdDraw.show();
+                StdDraw.pause(10); //games speed
+                
+                /*if (UserInput.checkKeyPressed("SCREENSHOT") == true)
+                 {
+                 Interface.gameOver();
+                 break;
+                 }*/
+                
+                
+                
+            }// While in active game, gameState = 1
             
-            StdDraw.show();
-            StdDraw.pause(10); //games speed
+            if(Cosmic.gameState == 2)
+            {
+                
+                Interface.gameOver();
+                StdDraw.pause(1000);
+                Cosmic.gameState = 0;
+                
+            }//check if game over screen
             
-        }// While game is still running (quit == false)
-        
-        System.exit(1);
+        }//while true, able to switch between gamestates
         
     }// RunGameLoop
     
@@ -91,7 +134,16 @@ public class GameLoop
                 
             }
 
-        }//entity creation
+        }//enemy creation
+        
+        for(int i = 0; i < 10; i++)
+        {
+            
+            powerUps[i] = new PowerUpEntity("powerUpChar.png", 0, 0, 30, 30, 0, false);
+            
+        }//missiles creation
+        
+        
   
     }//initialiseEntities
     
@@ -121,14 +173,11 @@ public class GameLoop
                     missiles[i].setActive(true);
                     missiles[i].setX((double) player.getX());
                     missiles[i].setY((double) player.getY());
-                    
                     missileNumber = i;
-                    
                     break;
                     
                 }
-            }
-            
+            }// Check if there are any missiles available to shoot and sets them up
             
             if(player.getRotation() < 0)
             {
@@ -149,18 +198,17 @@ public class GameLoop
                 
             }
             
-
             missileTime = false;
             
-        }//check if user shot and if there are missiles available
-        
-        
-        
+        }//check if user presses space and if a missile can be shot
         
     }//entityMovement
     
     public static void updateScreen()
     {
+      
+      //HUD
+      StdDraw.text(100, 680, "SCORE: " + Collisions.score(0));
         
         Interface.updatePositions(player.getFilename(), player.getX(), player.getY(), player.getWidth(), player.getHeight(), player.getRotation());
         
@@ -182,13 +230,62 @@ public class GameLoop
             
         }
         
+        for(int i = 0; i < maxPowerUpCount; i++)
+        {
+            
+            if(powerUps[i].getActive() == true) Interface.updatePositions(powerUps[i].getFilename(), powerUps[i].getX(), powerUps[i].getY(), powerUps[i].getWidth(), powerUps[i].getHeight(), 0);
+            
+        }
+        
     }//updateScreen
     
-    public static void hitDetection(PlayerEntity player, MissileEntity[] missiles, EnemyEntity[][] ememies)
+    public static void hitDetection(PlayerEntity player, MissileEntity[] missiles, EnemyEntity[][] ememies, PowerUpEntity[] powerUps)
     {
         
-        Collisions.detectHits(player, missiles, enemies);
+        Collisions.detectHits(player, missiles, enemies, powerUps);
         
     }//hitDetection
+    
+    public static void createPowerUps()
+    {
+        
+        if(Math.random() < 0.001)
+        {
+            
+            for(int i = 0; i < maxPowerUpCount; i++)
+            {
+                
+                if(powerUps[i].getActive() == false)
+                {
+                    
+                    powerUps[i] = PowerUpEntity.create();
+                    System.out.println(powerUps[i].getPowerUpType());
+                    break;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }//checkPowerUps
+    
+    public static void activatePowerUps()
+    {
+        
+        if(powerUpActive == 2)
+        {
+            
+            missileRapidSpeed = 2;
+
+        }
+        if(powerUpActive == 3)
+        {
+            
+            
+            
+        }
+    
+    }//activatePowerUps
 
 }//GameLoop

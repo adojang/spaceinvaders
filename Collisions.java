@@ -1,5 +1,7 @@
+
 public class Collisions
 {
+      public static int playerscore = 0;
 
     public static boolean hitDetection(double x1, double y1, double x2, double y2)
     {
@@ -65,12 +67,13 @@ public class Collisions
                         missiles[i].setX(0);
                         missiles[i].setY(0);
                         enemies[j][k].setActive(false);
+                        score(10);
                         
                     }//check for missiles and enemies
                     
                     if(hitDetection(  player.getX(), player.getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
                     {
-                        
+                        //Set gamestate to gameover
                         Cosmic.gameState = 2;
                         
                     }//check for player and enemies
@@ -99,5 +102,17 @@ public class Collisions
         }//i
         
     }//detectHits
+    
+      public static int score(int add)
+    {
+        playerscore = playerscore + add;
+       // System.out.println(playerscore);
+       return playerscore;
+      }
+      /*
+      public static int score()
+      {
+       return playerscore; 
+      } */
     
 }//Collisions
