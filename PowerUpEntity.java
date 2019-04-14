@@ -8,6 +8,7 @@ public class PowerUpEntity
     private String filename;
     private boolean active;
     private int powerUpType;
+    public static double spawnOdds = 0.001;
     
     /*
      Power Up Types:
@@ -76,7 +77,7 @@ public class PowerUpEntity
         
         PowerUpEntity temp;
         
-        int randomType = (int) (Math.random() * ((3 - 1) + 1)) + 1;
+        int randomType = (int) (Math.random() * ((2 - 1) + 1)) + 1;
         int randomX = (int) (Math.random() * ((1024 - 0) + 0)) + 0;
         int randomY = (int) (Math.random() * ((200 - 0) + 0)) + 0;
         
@@ -90,11 +91,7 @@ public class PowerUpEntity
             temp = new PowerUpEntity("powerUpRapidChar.png", randomX, randomY, 30, 30, randomType, true);
             return temp;
         }
-        if(randomType == 3)
-        {
-            temp = new PowerUpEntity("powerUpNukeChar.png", randomX, randomY, 30, 30, randomType, true);
-            return temp;
-        }else
+        else
         {
             temp = new PowerUpEntity("powerUpChar.png", randomX, randomY, 30, 30, randomType, true);
         }

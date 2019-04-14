@@ -6,7 +6,7 @@ public class GameLoop
     public static int missileCount = 100;
     public static MissileEntity[] missiles = new MissileEntity[missileCount];
     public static int loopCounter = 0;
-    public static int missileRapidSpeed = 15;
+    public static int missileRapidSpeed = 20;
     public static boolean missileTime = true;
     
     public static int enemyCount = 5;
@@ -14,10 +14,10 @@ public class GameLoop
     
     public static PowerUpEntity[] powerUps = new PowerUpEntity[10];
     public static int maxPowerUpCount = 10;
-    public static int powerUpActive = 0;
+    public static int currentPowerUpActive = 0;
     public static boolean activePowerUp = false;
     public static int powerUpCounter = 0;
-    public static int powerUpTime = 200;
+    public static int powerUpTime = 150;
 
     
     
@@ -73,7 +73,7 @@ public class GameLoop
                     if(powerUpCounter == powerUpTime)
                     {
                         activePowerUp = false;
-                        powerUpActive = 0;
+                        currentPowerUpActive = 0;
                         missileRapidSpeed = 15;
                     }
                 }
@@ -84,6 +84,7 @@ public class GameLoop
                 //bugchecking
                 StdDraw.text(500,600,Boolean.toString(activePowerUp));
                 StdDraw.text(400,600,Integer.toString(powerUpCounter));
+                StdDraw.text(300,600,Integer.toString(player.getRotation()));
                 //StdDraw.text(300,600,Boolean.toString(missileTime));
                 //bugchecking
                 
@@ -129,7 +130,7 @@ public class GameLoop
             for(int j = 0; j < enemyCount; j++)
             {
                 
-                enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*60, 500 + j*60, 50, 50, true);
+                enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*60, 400 + j*60, 50, 50, true);
                 
             }
 
@@ -162,40 +163,8 @@ public class GameLoop
          
         if(UserInput.checkKeyPressed("SPACE") == true && missileTime == true)
         {
-            int missileNumber = 0;
-            
-            for(int i = 0; i < missileCount; i++)
-            {
-                if(missiles[i].getActive() == false)
-                {
-                    
-                    missiles[i].setActive(true);
-                    missiles[i].setX((double) player.getX());
-                    missiles[i].setY((double) player.getY());
-                    missileNumber = i;
-                    break;
-                    
-                }
-            }// Check if there are any missiles available to shoot and sets them up
-            
-            if(player.getRotation() < 0)
-            {
-                
-                missiles[missileNumber].setYVel( missiles[missileNumber].getVelocity()  *  Math.sin( 2*Math.PI/4 + player.getRotation()*(Math.PI/180) ));
-                missiles[missileNumber].setXVel( missiles[missileNumber].getVelocity()  *  Math.cos( 2*Math.PI/4 + player.getRotation()*(Math.PI/180) ));
-                
-            }else if(player.getRotation() > 0)
-            {
-                
-                missiles[missileNumber].setYVel( missiles[missileNumber].getVelocity()  *  Math.sin( 2*Math.PI/4 - player.getRotation()*(Math.PI/180) ));
-                missiles[missileNumber].setXVel( -missiles[missileNumber].getVelocity()  *  Math.cos( 2*Math.PI/4 - player.getRotation()*(Math.PI/180) ));
-                
-            }else
-            {
-                
-                missiles[missileNumber].setYVel(missiles[missileNumber].getVelocity());
-                
-            }
+
+            MissileEntity.shoot(missiles, currentPowerUpActive, player);
             
             missileTime = false;
             
@@ -248,7 +217,7 @@ public class GameLoop
     public static void createPowerUps()
     {
         
-        if(Math.random() < 0.001)
+        if(Math.random() < PowerUpEntity.spawnOdds)
         {
             
             for(int i = 0; i < maxPowerUpCount; i++)
@@ -258,7 +227,6 @@ public class GameLoop
                 {
                     
                     powerUps[i] = PowerUpEntity.create();
-                    System.out.println(powerUps[i].getPowerUpType());
                     break;
                     
                 }
@@ -272,17 +240,11 @@ public class GameLoop
     public static void activatePowerUps()
     {
         
-        if(powerUpActive == 2)
+        if(currentPowerUpActive == 2)
         {
             
             missileRapidSpeed = 2;
 
-        }
-        if(powerUpActive == 3)
-        {
-            
-            
-            
         }
     
     }//activatePowerUps

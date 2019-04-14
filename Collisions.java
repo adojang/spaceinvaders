@@ -92,7 +92,7 @@ public class Collisions
                 
                 StdDraw.text(300,400,"POWERUP");
                 
-                GameLoop.powerUpActive = powerUps[i].getPowerUpType();
+                GameLoop.currentPowerUpActive = powerUps[i].getPowerUpType();
                 powerUps[i].setActive(false);
                 GameLoop.activePowerUp = true;
                 GameLoop.powerUpCounter = 0;
