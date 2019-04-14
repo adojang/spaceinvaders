@@ -21,7 +21,7 @@ public class Interface
       StdDraw.setPenColor(243, 241, 239);
       
       //StdDraw.show();
-      //Background picture source: https://unsplash.com/photos/pzwy4dL_huU  -Photo by Ahmed Sharyaan on Unsplash
+      //Background picture source: https://saundersanimation.files.wordpress.com/2014/06/spacecrododile.jpg
       //This image is free for commericial use
       StdDraw.clear();
       StdDraw.picture(512, 350, "b1.jpeg", 1024, 700, 0);     
