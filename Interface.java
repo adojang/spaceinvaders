@@ -19,10 +19,8 @@ public class Interface
       Font f2 = new Font(type, Font.BOLD, 40);
       StdDraw.setFont(f0);
       StdDraw.setPenColor(243, 241, 239);
-      
-      //StdDraw.show();
+  
       //Background picture source: https://saundersanimation.files.wordpress.com/2014/06/spacecrododile.jpg
-      //This image is free for commericial use
       StdDraw.clear();
       StdDraw.picture(512, 350, "b1.jpeg", 1024, 700, 0);     
       StdDraw.text(512, 600, "COSMIC CROCODILES");
@@ -44,14 +42,21 @@ public class Interface
     
     public static void gameOver()
     {
-
-       // https://wallpaperaccess.com/full/112282.png
-       StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 180); 
+      //Background Source:
+      //https://wallpaperaccess.com/full/348158.png
+      
+      
+       // ////https://wallpaperaccess.com/full/112282.png
+      
+       //StdDraw.picture(512, 350, "b6.jpeg", 1024, 700, 180); 
       Font gfont = new Font("Monospaced", Font.BOLD, 60);
       StdDraw.setFont(gfont);
+      /*
       StdDraw.text(512, 350, "GAME OVER");
       StdDraw.text(512, 200, "SCORE:" + " " + String.valueOf(Collisions.score(0)));
       StdDraw.show();
+      
+      */
       
       for(int i=5;i>=-1;i--)
       {
@@ -72,3 +77,8 @@ public class Interface
 
 
 }//Interface
+
+/* Extra Wallpapers for Use later on:
+ * Level 2: use b3
+ * Bossfight use b4
+ * */

@@ -43,7 +43,7 @@ public class GameLoop
             {
                 
                 StdDraw.clear();
-                // https://wallpaperaccess.com/full/112282.png
+                // https://wallpaperaccess.com/full/436082.png
                 StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 0); 
                 StdDraw.setPenColor(StdDraw.WHITE);
                 
