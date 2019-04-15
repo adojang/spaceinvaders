@@ -43,10 +43,7 @@ public class Interface
     public static void gameOver()
     {
       //Background Source:
-      //https://wallpaperaccess.com/full/348158.png
-      
-      
-       // ////https://wallpaperaccess.com/full/112282.png
+      // https://wallpaperaccess.com/full/436082.png
       
        //StdDraw.picture(512, 350, "b6.jpeg", 1024, 700, 180); 
       Font gfont = new Font("Monospaced", Font.BOLD, 60);
@@ -79,6 +76,8 @@ public class Interface
 }//Interface
 
 /* Extra Wallpapers for Use later on:
- * Level 2: use b3
- * Bossfight use b4
+ * Level 2: use b3 - https://wallpaperaccess.com/full/348158.png
+ * Bossfight use b4 - https://wallpaperaccess.com/full/43078.jpg
  * */
+
+//https://wallpaperaccess.com/full/348158.png - b2old

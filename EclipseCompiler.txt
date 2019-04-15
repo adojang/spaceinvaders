@@ -1579,3 +1579,24 @@ fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@12f051d
 fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
 15 Apr 2019 15:55:55 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@481275' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
 15 Apr 2019 15:55:55 GMT: Compiler call returned
+15 Apr 2019 17:53:52 GMT: diagnostics = javax.tools.DiagnosticCollector@1b524af
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@fc50d5
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+15 Apr 2019 17:53:52 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1302dbe' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+15 Apr 2019 17:53:54 GMT: Compiler call returned
+15 Apr 2019 17:53:54 GMT: diagnostics = javax.tools.DiagnosticCollector@a0e0a8
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@d0e7db
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Interface.java]
+15 Apr 2019 17:53:54 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@164b0c4' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+15 Apr 2019 17:53:54 GMT: Compiler call returned
+15 Apr 2019 17:55:11 GMT: Log 'EclipseCompiler.txt' opened: 15 Apr 2019 17:55:11 GMT with name C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\EclipseCompiler.txt
+15 Apr 2019 18:04:15 GMT: diagnostics = javax.tools.DiagnosticCollector@1c5734
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1495b02
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+15 Apr 2019 18:04:15 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@16ad854' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+15 Apr 2019 18:04:15 GMT: Compiler call returned
+15 Apr 2019 18:08:37 GMT: diagnostics = javax.tools.DiagnosticCollector@798151
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@3048a
+fileObjects = [C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\Cosmic.java, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\GameLoop.java]
+15 Apr 2019 18:08:37 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@a9fdc1' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders;C:\Users\Adojang\Documents\GitHub\spaceinvaders\stdlib.jar;C:\Users\Adojang\Desktop\SpaceInvaders\newspaceinvaders\spaceinvaders\drjava-beta-20160913-225446.exe]
+15 Apr 2019 18:08:37 GMT: Compiler call returned
