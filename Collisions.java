@@ -74,7 +74,7 @@ public class Collisions
                     if(hitDetection(  player.getX(), player.getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
                     {
                         //Set gamestate to gameover
-                        Cosmic.gameState = 2;
+                        Cosmic.gameState = 3;
                         
                     }//check for player and enemies
                     

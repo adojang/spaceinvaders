@@ -10,7 +10,7 @@ public class Cosmic
     
     public static void main(String[] args)
     {
-        
+      
         initialise();
         
 
