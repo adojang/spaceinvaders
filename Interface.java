@@ -1,6 +1,11 @@
 import java.awt.Font;
 public class Interface
 {
+    
+    public static String type = "Monospaced";
+    public static Font f0 = new Font(type, Font.BOLD, 80);
+    public static Font f1 = new Font(type, Font.BOLD, 50);
+    public static Font f2 = new Font(type, Font.BOLD, 20);
 
     public static void updatePositions(String filename, int entityX, int entityY, int entityW, int entityH, int entityR)
     {
@@ -10,37 +15,68 @@ public class Interface
     }//updateGameScreen
     
     //DRAW MAIN MENU
-    public static void updateMenu()
+    public static void updateMenu(int a)
     {
-      //Set Gamefonts
-      String type = "Monospaced";
-      Font f0 = new Font(type, Font.BOLD, 80);
-      Font f1 = new Font(type, Font.BOLD, 50);
-      Font f2 = new Font(type, Font.BOLD, 40);
-      StdDraw.setFont(f0);
-      StdDraw.setPenColor(243, 241, 239);
-  
-      //Background picture source: https://saundersanimation.files.wordpress.com/2014/06/spacecrododile.jpg
-      StdDraw.clear();
-      StdDraw.picture(512, 350, "b1.jpeg", 1024, 700, 0);     
-      StdDraw.text(512, 600, "COSMIC CROCODILES");
-      StdDraw.setFont(f1);
-      StdDraw.textLeft(650, 500, "Controls");
-      StdDraw.textLeft(600, 450, "W - Up");
-      StdDraw.textLeft(600, 400, "A - Left");
-      StdDraw.textLeft(600, 350, "S - Down");
-      StdDraw.textLeft(600, 300, "D - Right");
-      StdDraw.textLeft(600, 250, "P - Screenshot");
-      StdDraw.textLeft(600, 200, "Q - Quit");
-      StdDraw.textLeft(600, 150, "<Space>");
-       StdDraw.textLeft(600, 100, "to shoot");
+
        
-       if(Cosmic.highscore != 0) StdDraw.textLeft(30, 50, "High Score: " + Cosmic.highscore);
          
         
+
        
-        StdDraw.show();
-      StdDraw.setFont(f2);
+        if(a == 0)
+        {
+            
+            StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
+            StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
+            
+            StdDraw.setPenColor(243, 241, 239);
+            StdDraw.setFont(f2);
+            StdDraw.text(512, 450, "CONTROLS:");
+            StdDraw.text(512, 420, "W - Up");
+            StdDraw.text(512, 390, "A - Left");
+            StdDraw.text(512, 360, "S - Down");
+            StdDraw.text(512, 330, "D - Right");
+            StdDraw.text(512, 300, "P - Screenshot");
+            StdDraw.text(512, 270, "Q - Quit");
+            StdDraw.text(512, 240, "<Space> - Shoot");
+            
+            StdDraw.setFont(f1);
+            StdDraw.text(512, 130, "Highscore comes here");
+            if(Cosmic.highscore != 0) StdDraw.textLeft(30, 50, "High Score: " + Cosmic.highscore);
+            
+            StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
+            
+            StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);
+            
+            StdDraw.show();
+            
+        }else
+        {
+            StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
+            
+            StdDraw.setPenColor(243, 241, 239);
+            StdDraw.setFont(f2);
+            StdDraw.text(512, 450, "CONTROLS:");
+            StdDraw.text(512, 420, "W - Up");
+            StdDraw.text(512, 390, "A - Left");
+            StdDraw.text(512, 360, "S - Down");
+            StdDraw.text(512, 330, "D - Right");
+            StdDraw.text(512, 300, "P - Screenshot");
+            StdDraw.text(512, 270, "Q - Quit");
+            StdDraw.text(512, 240, "<Space> - Shoot");
+            
+            StdDraw.setFont(f1);
+            StdDraw.text(512, 130, "Highscore comes here");
+            if(Cosmic.highscore != 0) StdDraw.textLeft(30, 50, "High Score: " + Cosmic.highscore);
+            
+            StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
+            
+            StdDraw.show();
+            
+        }
+        
+      //Background picture source: https://saundersanimation.files.wordpress.com/2014/06/spacecrododile.jpg
+        
     }//updateGameScreen
     
     public static void gameOver()
