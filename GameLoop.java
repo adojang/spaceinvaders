@@ -129,7 +129,7 @@ public class GameLoop
                  {
                   //Using screenshot as a debugging trigger key for now.
                   StdDraw.save("screenshot.png");
-                  StdDraw.pause(50);
+                  StdDraw.pause(150);
                  //Cosmic.gameState = 3;
                  }
                 
