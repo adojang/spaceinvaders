@@ -1,8 +1,10 @@
 
 public class Collisions
 {
-      public static int playerscore = 0;
-
+  public static int playerscore = 0;
+  private static int hits=0;
+  private static int[] enemy2Hp=new int[GameLoop.enemyCount];
+  private static int Hp=5;
     public static boolean hitDetection(double x1, double y1, double x2, double y2)
     {
         
@@ -47,7 +49,7 @@ public class Collisions
    
     }//hitDetection
     
-    public static void detectHits(PlayerEntity player, MissileEntity[] missiles, EnemyEntity[][] enemies, PowerUpEntity[] powerUps)
+   public static void detectHits(PlayerEntity player, MissileEntity[] missiles, MissileEntity[] laser, EnemyEntity[][] enemies,EnemyEntity[]enemy2, PowerUpEntity[] powerUps)
     {
         
         for(int i = 0; i < GameLoop.missileCount; i++)
@@ -79,6 +81,29 @@ public class Collisions
                     }//check for player and enemies
                     
                 }//k
+                if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[j].getX(), enemy2[j].getY()    ) == true  && enemy2[j].getActive() == true       ){
+                  
+                  StdDraw.text(800,200,"HIT");
+                  missiles[i].setActive(false);
+                  missiles[i].setX(0);
+                  missiles[i].setY(0);
+                  enemy2Hp[j]++;
+                  if(enemy2Hp[j]==Hp){
+                    enemy2[j].setActive(false);
+                  }
+                  
+                }
+                if(hitDetection( laser[j].getX(), laser[j].getY(), player.getX(), player.getY() )  == true ){
+                  
+                  StdDraw.text(800,200,"HIT");
+                  laser[j].setActive(false);
+                  laser[j].setX(0);
+                  laser[j].setY(0);
+                  hits++;
+                  if(hits==3){
+                    Cosmic.gameState = 2;
+                  }
+                }//Checks if enemy laser hits player
                 
             }//j
            

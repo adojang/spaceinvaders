@@ -43,6 +43,8 @@ public class GameLoop
                 
             }// Main Menu, gameState = 0
             
+            //After main menu exit, will go down, so this ensures that music is stopped
+            mainmenumusic.stopmusic(); //Checks if gameState is 0. Here it will be 1 so music will stop playing.
             
             while(/*UserInput.checkKeyPressed("QUIT") == false*/ Cosmic.gameState == 1)
             {
@@ -102,7 +104,10 @@ public class GameLoop
                 
                 if (UserInput.checkKeyPressed("SCREENSHOT") == true)
                  {
-                 Cosmic.gameState = 3;
+                  //Using screenshot as a debugging trigger key for now.
+                  StdDraw.save("screenshot.png");
+                  StdDraw.pause(50);
+                 //Cosmic.gameState = 3;
                  }
                 
                 

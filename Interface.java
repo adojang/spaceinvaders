@@ -17,6 +17,11 @@ public class Interface
     //DRAW MAIN MENU
     public static void updateMenu(int a)
     {
+
+       
+         
+        
+
        
         if(a == 0)
         {
@@ -37,6 +42,7 @@ public class Interface
             
             StdDraw.setFont(f1);
             StdDraw.text(512, 130, "Highscore comes here");
+            if(Cosmic.highscore != 0) StdDraw.textLeft(30, 50, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
@@ -61,6 +67,7 @@ public class Interface
             
             StdDraw.setFont(f1);
             StdDraw.text(512, 130, "Highscore comes here");
+            if(Cosmic.highscore != 0) StdDraw.textLeft(30, 50, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
@@ -76,17 +83,11 @@ public class Interface
     {
       //Background Source:
       // https://wallpaperaccess.com/full/436082.png
-      
-       //StdDraw.picture(512, 350, "b6.jpeg", 1024, 700, 180); 
       Font gfont = new Font("Monospaced", Font.BOLD, 60);
       StdDraw.setFont(gfont);
-      /*
-      StdDraw.text(512, 350, "GAME OVER");
-      StdDraw.text(512, 200, "SCORE:" + " " + String.valueOf(Collisions.score(0)));
-      StdDraw.show();
       
-      */
-      
+      if (Collisions.score(0) > Cosmic.highscore) Cosmic.highscore = Collisions.score(0);
+
       for(int i=5;i>=-1;i--)
       {
        StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 180); 
