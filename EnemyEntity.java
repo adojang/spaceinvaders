@@ -167,7 +167,7 @@ public class EnemyEntity
   
   public void update1(EnemyEntity enemy[], int angle){
     int range=400;
-    for(int i=0;i< GameLoop.enemyCount;i++){
+    for(int i=0;i< GameLoop.enemy2Count;i++){
       if(verticalState ==1){
         enemy[i].setY(enemy[i].getY()-1);
         if(enemy[i].getY() == 235){
