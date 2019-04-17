@@ -319,7 +319,7 @@ public class GameLoop
         if(currentPowerUpActive == 2)
         {
             
-            missileRapidSpeed = 2;
+            missileRapidSpeed = 7;
 
         }
     
