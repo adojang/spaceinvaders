@@ -284,7 +284,7 @@ public class GameLoop
   public static void hitDetection(PlayerEntity player, MissileEntity[] missiles,MissileEntity[] laser, EnemyEntity[][] ememies,EnemyEntity[] enemy2, PowerUpEntity[] powerUps)
   {
     
-    Collisions.detectHits(player, missiles,laser, enemies,enemy2, powerUps);
+    Collisions.detectHits(player, missiles, laser, enemies, enemy2, powerUps);
     
   }//hitDetection
     

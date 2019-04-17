@@ -1,4 +1,3 @@
-
 public class Cosmic
 {
     public static int highscore = 0;
