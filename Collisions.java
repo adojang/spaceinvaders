@@ -81,30 +81,31 @@ public class Collisions
                     }//check for player and enemies
                     
                 }//k
-                if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[j].getX(), enemy2[j].getY()    ) == true  && enemy2[j].getActive() == true &&( j<GameLoop.enemy2Count)){
-                  
-                  StdDraw.text(800,200,"HIT");
-                  missiles[i].setActive(false);
-                  missiles[i].setX(0);
-                  missiles[i].setY(0);
-                  enemy2Hp[j]++;
-                  if(enemy2Hp[j]==Hp){
-                    enemy2[j].setActive(false);
+                for(int m=0;m<GameLoop.enemy2Count;m++){
+                  if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true ){
+                    
+                    StdDraw.text(800,200,"HIT");
+                    missiles[i].setActive(false);
+                    missiles[i].setX(0);
+                    missiles[i].setY(0);
+                    enemy2Hp[m]++;
+                    if(enemy2Hp[m]==Hp){
+                      enemy2[m].setActive(false);
+                    }
+                    
                   }
-                  
+                  if(hitDetection( laser[m].getX(), laser[m].getY(), player.getX(), player.getY() )  == true ){
+                    
+                    StdDraw.text(800,200,"HIT");
+                    laser[m].setActive(false);
+                    laser[m].setX(0);
+                    laser[m].setY(0);
+                    hits++;
+                    if(hits==3){
+                      Cosmic.gameState = 3;
+                    }
+                  }//Checks if enemy laser hits player
                 }
-                if(hitDetection( laser[j].getX(), laser[j].getY(), player.getX(), player.getY() )  == true && (j<GameLoop.enemy2Count) ){
-                  
-                  StdDraw.text(800,200,"HIT");
-                  laser[j].setActive(false);
-                  laser[j].setX(0);
-                  laser[j].setY(0);
-                  hits++;
-                  if(hits==3){
-                    Cosmic.gameState = 3;
-                  }
-                }//Checks if enemy laser hits player
-                
             }//j
            
         }//i
