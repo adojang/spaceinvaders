@@ -7,3 +7,5 @@ GameLoop.class
 MissileEntity.class
 StdOut.class
 StdRandom.class
+EnemyEntity.class
+GameLoop.class

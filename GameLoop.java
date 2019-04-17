@@ -342,7 +342,7 @@ public class GameLoop
     
     public static void enemyShoot(MissileEntity zap[]){
       for(int i =0; i< enemy2Count; i++){
-        if(zap[i].getActive() == false && StdRandom.bernoulli(0.02)==true && enemy2[i].getActive()==true){
+        if(zap[i].getActive() == false && StdRandom.bernoulli(1)==true && enemy2[i].getActive()==true){
           laser[i].setActive(true);
           laser[i].setX(enemy2[i].getX());
           laser[i].setY(enemy2[i].getY());
