@@ -21,6 +21,9 @@ public class GameLoop
     public static Audio mainmenumusic = new Audio();
     public static Audio shoot = new Audio();
     
+    public static int menuTimer = 0;
+    
+    
     
     public static void runGameLoop()
     {
@@ -36,10 +39,25 @@ public class GameLoop
             while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
             {
                 
+                menuTimer++;
+                
+                if(menuTimer < 15)
+                {
+                    Interface.updateMenu(0);
+                }else
+                {
+                    Interface.updateMenu(1);
+                }
+                if(menuTimer == 30) menuTimer = 0;
+                
+                
+                
                 UserInput.checkUserInput();
-                Interface.updateMenu();
+                //Interface.updateMenu();
                 if(UserInput.checkKeyPressed("SPACE") == true) Cosmic.gameState = 1;
                 if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+                
+                StdDraw.pause(10);
                 
             }// Main Menu, gameState = 0
             
