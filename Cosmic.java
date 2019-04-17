@@ -1,6 +1,6 @@
 public class Cosmic
 {
-    
+    public static int highscore = 0;
     public static int gameState = 0;
     /*
         0 - menu

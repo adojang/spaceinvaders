@@ -105,6 +105,8 @@ public class GameLoop
                 if (UserInput.checkKeyPressed("SCREENSHOT") == true)
                  {
                   //Using screenshot as a debugging trigger key for now.
+                  StdDraw.save("screenshot.png");
+                  StdDraw.pause(50);
                  //Cosmic.gameState = 3;
                  }
                 
