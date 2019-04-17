@@ -81,7 +81,7 @@ public class Collisions
                     }//check for player and enemies
                     
                 }//k
-                if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[j].getX(), enemy2[j].getY()    ) == true  && enemy2[j].getActive() == true &&( j<GameLoop.enemy2Count)    ){
+                if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[j].getX(), enemy2[j].getY()    ) == true  && enemy2[j].getActive() == true &&( j<GameLoop.enemy2Count)){
                   
                   StdDraw.text(800,200,"HIT");
                   missiles[i].setActive(false);

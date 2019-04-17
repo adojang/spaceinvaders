@@ -8,13 +8,9 @@ public class GameLoop
     public static int loopCounter = 0;
     public static int missileRapidSpeed = 20;
     public static boolean missileTime = true;
-    
-<<<<<<< HEAD
+    public static int enemy2Count= 3;
     public static int enemyCount = 5;
-    public static int enemy2Count=3;
-=======
-    public static int enemyCount = 3;
->>>>>>> 078d1ffa230aacb62210fb85ebdac53bccf6fbc9
+
     public static EnemyEntity[][] enemies = new EnemyEntity[enemyCount][enemyCount];
     public static int spawnCheck=0;
     public static EnemyEntity[] enemy2= new EnemyEntity[enemyCount];
@@ -290,13 +286,8 @@ public class GameLoop
     
   public static void hitDetection(PlayerEntity player, MissileEntity[] missiles,MissileEntity[] laser, EnemyEntity[][] ememies,EnemyEntity[] enemy2, PowerUpEntity[] powerUps)
   {
-    
-<<<<<<< HEAD
-    Collisions.detectHits(player, missiles, laser, enemies , enemy2, powerUps);
-=======
-    Collisions.detectHits(player, missiles, laser, enemies, enemy2, powerUps);
->>>>>>> 078d1ffa230aacb62210fb85ebdac53bccf6fbc9
-    
+
+    Collisions.detectHits(player, missiles, laser, enemies , enemy2, powerUps);  
   }//hitDetection
     
     public static void createPowerUps()
