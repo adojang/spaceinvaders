@@ -81,7 +81,7 @@ public class Collisions
                     }//check for player and enemies
                     
                 }//k
-                if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[j].getX(), enemy2[j].getY()    ) == true  && enemy2[j].getActive() == true       ){
+                if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[j].getX(), enemy2[j].getY()    ) == true  && enemy2[j].getActive() == true &&( j<GameLoop.enemy2Count)    ){
                   
                   StdDraw.text(800,200,"HIT");
                   missiles[i].setActive(false);
@@ -93,7 +93,7 @@ public class Collisions
                   }
                   
                 }
-                if(hitDetection( laser[j].getX(), laser[j].getY(), player.getX(), player.getY() )  == true ){
+                if(hitDetection( laser[j].getX(), laser[j].getY(), player.getX(), player.getY() )  == true && (j<GameLoop.enemy2Count) ){
                   
                   StdDraw.text(800,200,"HIT");
                   laser[j].setActive(false);
@@ -101,7 +101,7 @@ public class Collisions
                   laser[j].setY(0);
                   hits++;
                   if(hits==3){
-                    Cosmic.gameState = 2;
+                    Cosmic.gameState = 3;
                   }
                 }//Checks if enemy laser hits player
                 

@@ -9,7 +9,12 @@ public class GameLoop
     public static int missileRapidSpeed = 20;
     public static boolean missileTime = true;
     
+<<<<<<< HEAD
+    public static int enemyCount = 5;
+    public static int enemy2Count=3;
+=======
     public static int enemyCount = 3;
+>>>>>>> 078d1ffa230aacb62210fb85ebdac53bccf6fbc9
     public static EnemyEntity[][] enemies = new EnemyEntity[enemyCount][enemyCount];
     public static int spawnCheck=0;
     public static EnemyEntity[] enemy2= new EnemyEntity[enemyCount];
@@ -158,7 +163,7 @@ public class GameLoop
         {
             
             missiles[i] = new MissileEntity("missileChar.png", 0, 0, 15, 15, false, 0);
-            if(i< enemyCount){
+            if(i< enemy2Count){
               laser[i] = new MissileEntity("missileChar.png",0,0,15,15,false,0);
               
             }
@@ -170,7 +175,10 @@ public class GameLoop
           {
             
             enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*60, 500 + j*60, 50, 50, true);
-            enemy2[i] = new EnemyEntity("playerChar.png",specialEnemy,600,75,75,false);
+            
+            if(i<enemy2Count){
+              enemy2[i] = new EnemyEntity("playerChar.png",specialEnemy,600,75,75,false);
+            }
           }
           
         }//enemy creation
@@ -213,10 +221,10 @@ public class GameLoop
         
         if(enemyCheck(enemies)==false){
           
-          for(int i = 0; i < enemyCount; i++)
+          for(int i = 0; i < enemy2Count; i++)
           {
             if(spawnCheck==0){
-              for(int j=0;j<enemyCount;j++){
+              for(int j=0;j<enemy2Count;j++){
                 enemy2[j].setActive(true);
               }
               spawnCheck=1;
@@ -239,14 +247,14 @@ public class GameLoop
         
         Interface.updatePositions(player.getFilename(), player.getX(), player.getY(), player.getWidth(), player.getHeight(), player.getRotation());
         
-        for(int i = 0; i < enemyCount; i++)
+        for(int i = 0; i < enemy2Count; i++)
         {
           if(enemy2[i].getActive()==true){
             Interface.updatePositions(enemy2[i].getFilename(), enemy2[i].getX(), enemy2[i].getY(), enemy2[i].getWidth(), enemy2[i].getHeight(), 0);
           }
         }
         
-        for(int i = 0; i < enemyCount; i++)
+        for(int i = 0; i < enemy2Count; i++)
         {
           if(laser[i].getActive()==true){
             Interface.updatePositions(laser[i].getFilename(), (int)laser[i].getX(), (int)laser[i].getY(), laser[i].getWidth(), laser[i].getHeight(), 0);
@@ -283,7 +291,11 @@ public class GameLoop
   public static void hitDetection(PlayerEntity player, MissileEntity[] missiles,MissileEntity[] laser, EnemyEntity[][] ememies,EnemyEntity[] enemy2, PowerUpEntity[] powerUps)
   {
     
+<<<<<<< HEAD
+    Collisions.detectHits(player, missiles, laser, enemies , enemy2, powerUps);
+=======
     Collisions.detectHits(player, missiles, laser, enemies, enemy2, powerUps);
+>>>>>>> 078d1ffa230aacb62210fb85ebdac53bccf6fbc9
     
   }//hitDetection
     
@@ -338,7 +350,7 @@ public class GameLoop
     }
     
     public static void enemyShoot(MissileEntity zap[]){
-      for(int i =0; i< enemyCount; i++){
+      for(int i =0; i< enemy2Count; i++){
         if(zap[i].getActive() == false && StdRandom.bernoulli(0.02)==true && enemy2[i].getActive()==true){
           laser[i].setActive(true);
           laser[i].setX(enemy2[i].getX());
