@@ -701,13 +701,15 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);            // closes all windows
         // frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);      // closes only current window
         frame.setTitle("Standard Draw");
-        frame.setJMenuBar(createMenuBar());
+        //frame.setJMenuBar(createMenuBar());
         frame.pack();
         frame.requestFocusInWindow();
         frame.setVisible(true);
     }
 
     // create the menu bar (changed to private)
+    //Remove JMenuBar
+    /*
     private static JMenuBar createMenuBar() {
         JMenuBar menuBar = new JMenuBar();
         JMenu menu = new JMenu("File");
@@ -718,8 +720,9 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
                                 Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
         menu.add(menuItem1);
         return menuBar;
+        
     }
-
+*/
 
    /***************************************************************************
     *  User and screen coordinate systems.

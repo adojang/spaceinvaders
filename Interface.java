@@ -41,8 +41,7 @@ public class Interface
             StdDraw.text(512, 240, "<Space> - Shoot");
             
             StdDraw.setFont(f1);
-            StdDraw.text(512, 130, "Highscore comes here");
-            if(Cosmic.highscore != 0) StdDraw.textLeft(30, 50, "High Score: " + Cosmic.highscore);
+            if(Cosmic.highscore != 0) StdDraw.text(512, 30, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
@@ -66,8 +65,7 @@ public class Interface
             StdDraw.text(512, 240, "<Space> - Shoot");
             
             StdDraw.setFont(f1);
-            StdDraw.text(512, 130, "Highscore comes here");
-            if(Cosmic.highscore != 0) StdDraw.textLeft(30, 50, "High Score: " + Cosmic.highscore);
+            if(Cosmic.highscore != 0) StdDraw.text(512, 30, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
@@ -88,7 +86,7 @@ public class Interface
       
       if (Collisions.score(0) > Cosmic.highscore) Cosmic.highscore = Collisions.score(0);
 
-      for(int i=5;i>=-1;i--)
+      for(int i=5;i>=0;i--)
       {
        StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 180); 
         StdDraw.text(512, 350, "GAME OVER");
