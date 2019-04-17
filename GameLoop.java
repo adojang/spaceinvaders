@@ -116,9 +116,8 @@ public class GameLoop
                 if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
                 
                 //bugchecking
-                StdDraw.text(500,600,Boolean.toString(activePowerUp));
-                StdDraw.text(400,600,Integer.toString(powerUpCounter));
-                StdDraw.text(300,600,Integer.toString(player.getRotation()));
+                StdDraw.text(500,600,Integer.toString(Cosmic.highscore));
+                
                 //StdDraw.text(300,600,Boolean.toString(missileTime));
                 //bugchecking
                 
