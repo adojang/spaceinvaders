@@ -12,18 +12,13 @@ public class Cosmic
     {
       
         initialise();
-        
 
-        
-        GameLoop.runGameLoop();
-        
-        
+        GameLoop.runGameLoop();       
         
     }//main
     
     public static void initialise()
-    {
-        
+    { 
         StdDraw.enableDoubleBuffering();
         StdDraw.setCanvasSize(1024, 700);
         StdDraw.setXscale(0,1024);

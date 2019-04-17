@@ -18,17 +18,21 @@ public class GameLoop
     public static boolean activePowerUp = false;
     public static int powerUpCounter = 0;
     public static int powerUpTime = 150;
-
+    public static Audio mainmenumusic = new Audio();
+    public static Audio shoot = new Audio();
     
     
     public static void runGameLoop()
     {
+      
         
         while(true)
         {
             
             initialiseEntities();
             
+            //Play main menu music
+            mainmenumusic.playloop("maintheme.wav");
             while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
             {
                 
@@ -38,13 +42,18 @@ public class GameLoop
                 if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
                 
             }// Main Menu, gameState = 0
-
+            
+            
             while(/*UserInput.checkKeyPressed("QUIT") == false*/ Cosmic.gameState == 1)
             {
-                
+              /* 
+               * STOP PLAYING MAINMENY MUSIC HERE. Trigger once only.
+               * */
+              
+              
                 StdDraw.clear();
                 // https://wallpaperaccess.com/full/436082.png
-                StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 0); 
+                StdDraw.picture(512, 350, "b3.jpeg", 1024, 700, 0); 
                 StdDraw.setPenColor(StdDraw.WHITE);
                 
                 UserInput.checkUserInput();
@@ -165,6 +174,8 @@ public class GameLoop
         {
 
             MissileEntity.shoot(missiles, currentPowerUpActive, player);
+            shoot.playsound("shoot.wav");
+            //Shoot.wav was provided by a housemate and heavily edited and distorted by me. Original work.
             
             missileTime = false;
             
