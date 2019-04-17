@@ -9,7 +9,7 @@ public class GameLoop
     public static int missileRapidSpeed = 20;
     public static boolean missileTime = true;
     
-    public static int enemyCount = 5;
+    public static int enemyCount = 3;
     public static EnemyEntity[][] enemies = new EnemyEntity[enemyCount][enemyCount];
     public static int spawnCheck=0;
     public static EnemyEntity[] enemy2= new EnemyEntity[enemyCount];
