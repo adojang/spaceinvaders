@@ -9,8 +9,12 @@ public class GameLoop
     public static int missileRapidSpeed = 20;
     public static boolean missileTime = true;
     
+<<<<<<< HEAD
     public static int enemyCount = 5;
     public static int enemy2Count=3;
+=======
+    public static int enemyCount = 3;
+>>>>>>> 078d1ffa230aacb62210fb85ebdac53bccf6fbc9
     public static EnemyEntity[][] enemies = new EnemyEntity[enemyCount][enemyCount];
     public static int spawnCheck=0;
     public static EnemyEntity[] enemy2= new EnemyEntity[enemyCount];
@@ -27,6 +31,9 @@ public class GameLoop
     public static Audio mainmenumusic = new Audio();
     public static Audio shoot = new Audio();
     
+    public static int menuTimer = 0;
+    
+    
     
     public static void runGameLoop()
     {
@@ -42,10 +49,25 @@ public class GameLoop
             while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
             {
                 
+                menuTimer++;
+                
+                if(menuTimer < 15)
+                {
+                    Interface.updateMenu(0);
+                }else
+                {
+                    Interface.updateMenu(1);
+                }
+                if(menuTimer == 30) menuTimer = 0;
+                
+                
+                
                 UserInput.checkUserInput();
-                Interface.updateMenu();
+                //Interface.updateMenu();
                 if(UserInput.checkKeyPressed("SPACE") == true) Cosmic.gameState = 1;
                 if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+                
+                StdDraw.pause(10);
                 
             }// Main Menu, gameState = 0
             
@@ -99,9 +121,8 @@ public class GameLoop
                 if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
                 
                 //bugchecking
-                StdDraw.text(500,600,Boolean.toString(activePowerUp));
-                StdDraw.text(400,600,Integer.toString(powerUpCounter));
-                StdDraw.text(300,600,Integer.toString(player.getRotation()));
+                StdDraw.text(500,600,Integer.toString(Cosmic.highscore));
+                
                 //StdDraw.text(300,600,Boolean.toString(missileTime));
                 //bugchecking
                 
@@ -270,7 +291,11 @@ public class GameLoop
   public static void hitDetection(PlayerEntity player, MissileEntity[] missiles,MissileEntity[] laser, EnemyEntity[][] ememies,EnemyEntity[] enemy2, PowerUpEntity[] powerUps)
   {
     
+<<<<<<< HEAD
     Collisions.detectHits(player, missiles, laser, enemies , enemy2, powerUps);
+=======
+    Collisions.detectHits(player, missiles, laser, enemies, enemy2, powerUps);
+>>>>>>> 078d1ffa230aacb62210fb85ebdac53bccf6fbc9
     
   }//hitDetection
     
