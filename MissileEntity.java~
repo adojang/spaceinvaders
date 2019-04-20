@@ -229,5 +229,25 @@ public class MissileEntity
         }//tri missiles
         
     }//shoot
+    
+     public void update1()
+    {
+        
+        if(active == true)
+        {
+            
+            yPos = yPos - yVel;
+            xPos = xPos + xVel;
+            
+            if(yPos > 700 || xPos > 1024 || xPos < 0)
+            {
+                yPos = 0;
+                xPos = 0;
+                active = false;
+            }
+            
+        }
+    
+    }//update for laser
 
 }//MissileEntity

@@ -41,7 +41,7 @@ public class Interface
             StdDraw.text(512, 240, "<Space> - Shoot");
             
             StdDraw.setFont(f1);
-            if(Cosmic.highscore != 0) StdDraw.text(512, 30, "High Score: " + Cosmic.highscore);
+            if(Cosmic.highscore != 0) StdDraw.text(512, 150, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
@@ -65,7 +65,7 @@ public class Interface
             StdDraw.text(512, 240, "<Space> - Shoot");
             
             StdDraw.setFont(f1);
-            if(Cosmic.highscore != 0) StdDraw.text(512, 30, "High Score: " + Cosmic.highscore);
+            if(Cosmic.highscore != 0) StdDraw.text(512, 150, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             

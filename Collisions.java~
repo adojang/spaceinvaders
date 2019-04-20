@@ -4,7 +4,7 @@ public class Collisions
   public static int playerscore = 0;
   private static int hits=0;
   private static int[] enemy2Hp=new int[GameLoop.enemyCount];
-  private static int Hp=5;
+  private static int Hp=3;
     public static boolean hitDetection(double x1, double y1, double x2, double y2)
     {
         
@@ -64,7 +64,7 @@ public class Collisions
                     if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
                     {
                         
-                        StdDraw.text(800,200,"HIT");
+                        //StdDraw.text(800,200,"HIT");
                         missiles[i].setActive(false);
                         missiles[i].setX(0);
                         missiles[i].setY(0);

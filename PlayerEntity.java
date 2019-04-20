@@ -1,11 +1,13 @@
-public class PlayerEntity
+public class PlayerEntity extends Entity
 {
-
+/*
     private int xPos;
     private int yPos;
     private int width;
     private int height;
     private String filename;
+    */
+    
     private int rotation;
     private int velocity = 5;
     
@@ -20,7 +22,7 @@ public class PlayerEntity
         rotation = r;
         
     }//create
-    
+    /*
     public String getFilename()
     {
         
@@ -30,14 +32,14 @@ public class PlayerEntity
     public int getX()
     {
         
-        return xPos;
-        
+        return (int)xPos;
+        //If I made a terrible mistake remove (int)
     }
     public int getY()
     {
         
-        return yPos;
-        
+        return (int)yPos;
+        //If I made a terrible mistake remove (int)
     }
     public void setX(int x)
     {
@@ -56,13 +58,15 @@ public class PlayerEntity
         
         return height;
         
-    }
+    } */
+    // All of this can be removed after we've reviewed it doesn't break any code.
+    
     public int getRotation()
     {
         
         return rotation;
         
-    }
+    } 
     public void setRotation(int r)
     {
         

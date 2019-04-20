@@ -170,13 +170,13 @@ public class EnemyEntity
     for(int i=0;i< GameLoop.enemy2Count;i++){
       if(verticalState ==1){
         enemy[i].setY(enemy[i].getY()-1);
-        if(enemy[i].getY() == 235){
+        if(enemy[i].getY() <=175){
           verticalState=2;
         }
       }
       if(verticalState==2){
         enemy[i].setY(enemy[i].getY()+1);
-        if(enemy[i].getY() == 665){
+        if(enemy[i].getY() >= 665){
           verticalState=1;
         }        
         

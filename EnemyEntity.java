@@ -1,13 +1,16 @@
-public class EnemyEntity
+public class EnemyEntity extends Entity
 {
-  
+  /*
   private int xPos;
   private int yPos;
-  private static int xVel;
   private int width;
   private int height;
   private String filename;
   private static int velocity = 3;
+  */
+ private static int velocity = 3;
+  
+  private static int xVel;
   private boolean active;
   private static int movementState = 1;
   private static int specialState =1;
@@ -27,6 +30,8 @@ public class EnemyEntity
     
   }//create
   
+  /*
+  
   public String getFilename()
   {
     
@@ -36,13 +41,13 @@ public class EnemyEntity
   public int getX()
   {
     
-    return xPos;
-    
+    return (int)xPos;
+    //If I made a terrible mistake remove (int)
   }
   public int getY()
   {
     
-    return yPos;
+    return (int)yPos;
     
   }
   public void setY(int y)
@@ -52,14 +57,13 @@ public class EnemyEntity
     
   }
   public void setX(int x)
-  {
+    //If I made a terrible mistake remove (int)
+  { 
     
     xPos = x;
     
   }
-  public int getXvel(){
-    return xVel;
-  }
+ 
   public int getWidth()
   {
     
@@ -71,7 +75,12 @@ public class EnemyEntity
     
     return height;
     
+  } */
+  
+   public int getXvel(){
+    return xVel;
   }
+  
   public boolean getActive()
   {
     

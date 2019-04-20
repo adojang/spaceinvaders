@@ -6,6 +6,8 @@ public class MissileEntity
     private int width;
     private int height;
     private String filename;
+    //MissileEntity is not included for Entities yet because It's got weird stuff in it.
+  
     private boolean active;
     public double velocity = 10;
     private double yVel;
@@ -23,12 +25,15 @@ public class MissileEntity
         
     }//create
     
+ 
     public String getFilename()
     {
         
         return filename;
         
-    }
+    } 
+
+    
     public double getX()
     {
         
@@ -64,7 +69,7 @@ public class MissileEntity
         
         return height;
         
-    }
+    } 
     public boolean getActive()
     {
         

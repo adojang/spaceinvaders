@@ -1,11 +1,14 @@
-public class PowerUpEntity
+public class PowerUpEntity extends Entity
 {
-    
+    /*
     private int xPos;
     private int yPos;
     private int width;
     private int height;
     private String filename;
+    
+    */
+    
     private boolean active;
     private int powerUpType;
     public static double spawnOdds = 0.001;

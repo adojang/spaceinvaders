@@ -39,13 +39,18 @@ public class UserInput
         //if(StdDraw.isKeyPressed(80)) keys[7] = "ROTATERIGHT";
         
         //These are obsolete as we now have the mouse to control the turret
-         //Screenshot Utility
+       
         if(StdDraw.isKeyPressed(80)) keys[6] = "SCREENSHOT" /* Take a Screenshot */;
         
+        
+        
+        
+         if(StdDraw.isKeyPressed(79)) keys[7] = "DEBUG"; /*Remove before final version */
+         
+         
+         
+         
         if(StdDraw.isKeyPressed(83)) keys[8] = "DOWN";
-        
-
-        
     }//checkUserInput
     
     public static boolean checkKeyPressed(String key)
