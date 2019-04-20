@@ -9,3 +9,6 @@ StdOut.class
 StdRandom.class
 EnemyEntity.class
 GameLoop.class
+*.class
+*.class
+Collisions.class
