@@ -41,7 +41,7 @@ public class GameLoop
             initialiseEntities();
             
             //Play main menu music
-            mainmenumusic.playloop("maintheme.wav");
+            mainmenumusic.playloop("mainthemev2.wav");
             while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
             {
                 
@@ -127,10 +127,16 @@ public class GameLoop
                 
                 if (UserInput.checkKeyPressed("SCREENSHOT") == true)
                  {
-                  //Using screenshot as a debugging trigger key for now.
                   StdDraw.save("screenshot.png");
                   StdDraw.pause(150);
-                 //Cosmic.gameState = 3;
+                 }
+                
+                //REMOVE ME BEFORE FINAL
+                if (UserInput.checkKeyPressed("DEBUG") == true)
+                 {
+                  //Use this as a debugging key for now, assigned to key 'P'
+                  //GAME OVER
+                 Cosmic.gameState = 3;
                  }
                 
                 
