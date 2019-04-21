@@ -358,6 +358,7 @@ public class GameLoop
           laser[i].setY(enemy2[i].getY());
           laser[i].setXVel(enemy2[i].getXvel());
           laser[i].setYVel(2);
+          shoot.playsound("shoot.wav");
         }
         //laser[i].setActive(false);      
         

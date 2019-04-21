@@ -60,7 +60,10 @@ public class GameLoop
                 
                 UserInput.checkUserInput();
                 //Interface.updateMenu();
-                if(UserInput.checkKeyPressed("SPACE") == true) Cosmic.gameState = 1;
+                if(UserInput.checkKeyPressed("SPACE") == true){
+                  spawnCheck=0;
+                  Cosmic.gameState = 1;
+                }
                 if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
                 
                 StdDraw.pause(10);
@@ -172,7 +175,8 @@ public class GameLoop
         }//missiles creation
         
         for(int i = 0; i < enemyCount; i++)
-        {specialEnemy=(specialEnemy+ 200)+ 15;
+        {
+          specialEnemy=(specialEnemy+ 200)+ 15;
           for(int j = 0; j < enemyCount; j++)
           {
             
@@ -184,7 +188,7 @@ public class GameLoop
           }
           
         }//enemy creation
-        
+        specialEnemy=267;
         for(int i = 0; i < 10; i++)
         {
             
