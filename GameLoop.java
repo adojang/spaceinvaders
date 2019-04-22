@@ -27,6 +27,9 @@ public class GameLoop
     public static Audio mainmenumusic = new Audio();
     public static Audio shoot = new Audio();
     
+    public static double difficulty = 1;
+    public static int level = 1;
+    
     
     
     public static void runGameLoop()
@@ -43,16 +46,8 @@ public class GameLoop
             while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
             {
                 
-                
-                    Interface.updateMenu();
-                
-                
-                   Interface.updateMenu();
-                
-                //if(menuTimer == 30) menuTimer = 0;
-                
-                
-                
+                Interface.updateMenu();
+
                 UserInput.checkUserInput();
 
                 if(UserInput.checkKeyPressed("SPACE") == true){
@@ -71,11 +66,7 @@ public class GameLoop
             
             while(/*UserInput.checkKeyPressed("QUIT") == false*/ Cosmic.gameState == 1)
             {
-              /* 
-               * STOP PLAYING MAINMENY MUSIC HERE. Trigger once only.
-               * */
-              
-              
+
                 StdDraw.clear();
                 // https://wallpaperaccess.com/full/436082.png
                 StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 0); 
@@ -115,22 +106,26 @@ public class GameLoop
                         missileRapidSpeed = 15;
                     }
                 }
+                
+                
                  
                 StdDraw.show();
                 StdDraw.pause(10); //games speed
   
-            } 
-              if(Cosmic.gameState == 3)
+            }
+        
+            if(Cosmic.gameState == 3)
             {
+                
                 Interface.gameOver();
                 //Reset Things
                 Collisions.score(-1); //-1 is the code to reset
                 PlayerEntity.currentHP(-1); // -1 is the code to reset
                 mainmenumusic.stopmusic();
+                level = 0;
                 Cosmic.gameState = 0;
                 //runGameLoop();
-              
-                
+        
             }//check if game over screen
             
         }//while true, able to switch between gamestates
@@ -140,7 +135,8 @@ public class GameLoop
     public static void initialiseEntities()
     {
         
-        player = new PlayerEntity("playerChar.png", 512, 50, 50, 50, 0);
+        if(level == 1) player = new PlayerEntity("playerChar.png", 512, 50, 40, 40, 0);
+        
 
         for(int i = 0; i < missileCount; i++)
         {
@@ -158,7 +154,7 @@ public class GameLoop
           for(int j = 0; j < enemyCount; j++)
           {
             
-            enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*60, 500 + j*60, 45, 55, true);
+            enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*50, 450 + j*50, 40, 40, true);
             
             if(i<enemy2Count){
               enemy2[i] = new EnemyEntity("enemyShark.png",specialEnemy,600,47,80,false);
@@ -167,12 +163,17 @@ public class GameLoop
           
         }//enemy creation
         specialEnemy=267;
-        for(int i = 0; i < 10; i++)
+        
+        if(level == 1)
         {
-            
-            powerUps[i] = new PowerUpEntity("powerUpChar.png", 0, 0, 30, 30, 0, false);
-            
-        }//missiles creation
+            for(int i = 0; i < 10; i++)
+            {
+                
+                powerUps[i] = new PowerUpEntity("powerUpChar.png", 0, 0, 30, 30, 0, false);
+                
+            }//powerup creation
+        }
+        
         
         
   
@@ -205,18 +206,39 @@ public class GameLoop
         
         if(enemyCheck(enemies)==false){
           
-          for(int i = 0; i < enemy2Count; i++)
-          {
-            if(spawnCheck==0){
-              for(int j=0;j<enemy2Count;j++){
-                enemy2[j].setActive(true);
-              }
-              spawnCheck=1;
+          /**/
+            if(level % 5 == 0)
+            {
+                for(int i = 0; i < enemy2Count; i++)
+                {
+                    if(spawnCheck==0){
+                        for(int j=0;j<enemy2Count;j++){
+                            enemy2[j].setActive(true);
+                        }
+                        spawnCheck=1;
+                    }
+                    enemy2[i].update1(enemy2,angleCounter+=1);
+                    enemyShoot(laser);
+                    
+                }
+                
+                if(enemy2[0].getActive() == false && enemy2[1].getActive() == false && enemy2[2].getActive() == false)
+                {
+                    difficulty = difficulty + 0.2;
+                    level = level + 1;
+                    spawnCheck = 0;
+                    initialiseEntities();
+                }
+                
+                
+            }else
+            {
+                difficulty = difficulty + 0.2;
+                level = level + 1;
+                initialiseEntities();
+                
             }
-            enemy2[i].update1(enemy2,angleCounter+=1);
-            enemyShoot(laser);
-
-          }
+            
           
         }
         
@@ -306,7 +328,7 @@ public class GameLoop
         if(currentPowerUpActive == 2)
         {
             
-            missileRapidSpeed = 7;
+            missileRapidSpeed = 5;
 
         }
     
@@ -346,7 +368,19 @@ public class GameLoop
  public static void HUD()
       {
        //HUD
-      StdDraw.textLeft(5, 680, "SCORE: " + Collisions.score(0));
+        StdDraw.textLeft(5, 650, "SCORE: " + Collisions.score(0));
+          
+         
+          
+          if(spawnCheck==1)
+          {
+              StdDraw.textLeft(400, 650, "BOSSFIGHT");
+          }else
+          {
+              StdDraw.textLeft(400, 650, "LEVEL" + level);
+          }
+          
+          
         if (PlayerEntity.currentHP(0) >= 1) StdDraw.picture(30, 30, "playerChar.png", 40,40, 0);
         if (PlayerEntity.currentHP(0) >= 2) StdDraw.picture(80, 30, "playerChar.png", 40,40, 0);
         if (PlayerEntity.currentHP(0) == 3) StdDraw.picture(130, 30, "playerChar.png", 40,40, 0); 

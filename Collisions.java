@@ -69,6 +69,12 @@ public class Collisions
                         
                     }//check for player and enemies
                     
+                    if(enemies[j][k].getY() <= 0)
+                    {
+                        Cosmic.gameState = 3;
+                        
+                    }
+                    
                 }//k
                 for(int m=0;m<GameLoop.enemy2Count;m++){
                   if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true ){
