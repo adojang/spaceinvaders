@@ -102,9 +102,7 @@ public class Interface
        StdDraw.show();
       
       }
-      
-
-      
+ 
     }
 
 

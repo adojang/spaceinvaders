@@ -84,7 +84,11 @@ public class PlayerEntity extends Entity
     
     public static int currentHP(int modifyHP)
     {
-     HP = HP + modifyHP;
+      if (modifyHP == -1) HP = 3;
+       else
+       {
+     HP = HP - modifyHP;
+       }
      return HP;
     }
     

@@ -2,7 +2,7 @@
 public class Collisions
 {
   public static int playerscore = 0;
-  private static int hits=0;
+  //private static int hits=0; //Removed due to implementing HP for the player. See HUD in GameLoop for more detail
   private static int[] enemy2Hp=new int[GameLoop.enemyCount];
   private static int Hp=3;
     public static boolean hitDetection(double x1, double y1, double x2, double y2)
@@ -53,7 +53,7 @@ public class Collisions
                     if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
                     {
                         
-                        //StdDraw.text(800,200,"HIT");
+                        //If a bullet strikes enemy type one
                         missiles[i].setActive(false);
                         missiles[i].setX(0);
                         missiles[i].setY(0);
@@ -73,7 +73,7 @@ public class Collisions
                 for(int m=0;m<GameLoop.enemy2Count;m++){
                   if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true ){
                     
-                    //StdDraw.text(800,200,"HIT");
+                    //If a bullet strikes enemy type two
                     missiles[i].setActive(false);
                     missiles[i].setX(0);
                     missiles[i].setY(0);
@@ -87,16 +87,16 @@ public class Collisions
                   }
                   if(hitDetection( laser[m].getX(), laser[m].getY(), player.getX(), player.getY() )  == true ){
                     
-                    //StdDraw.text(800,200,"HIT");
+                    //If something hits US
                     laser[m].setActive(false);
                     laser[m].setX(0);
                     laser[m].setY(0);
                     //This is where our 'HP' is calculated
-                    hits++;
-                    PlayerEntity.currentHP(-1);
-                    if(hits==3){
+                    
+                    PlayerEntity.currentHP(1);
+                    if(PlayerEntity.currentHP(0) <= 0){
                       Cosmic.gameState = 3;
-                      hits=0;
+                      
                       for(int q=0;q<GameLoop.enemy2Count;q++){
                         enemy2Hp[m]=0;
                       }

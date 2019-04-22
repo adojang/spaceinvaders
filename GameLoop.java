@@ -83,6 +83,8 @@ public class GameLoop
                 
                 UserInput.checkUserInput();
                 
+                HUD();
+                
                 entityMovement();
                 
                 createPowerUps();
@@ -95,7 +97,7 @@ public class GameLoop
                 
                 loopCounter++;
                 
-                UserInput.actions(); //All the if statements for screenshot quit ?cheats? etc.
+                UserInput.actions(); //Screenshot Quit and FORCE game over
                 
                 if(loopCounter >= missileRapidSpeed)
                 {
@@ -116,22 +118,15 @@ public class GameLoop
                  
                 StdDraw.show();
                 StdDraw.pause(10); //games speed
-                
-                
-                
-                //bugchecking
-                //StdDraw.text(500,600,Integer.toString(Cosmic.highscore));
-                
-                //StdDraw.text(300,600,Boolean.toString(missileTime));
-                //bugchecking
-            
+  
             } 
               if(Cosmic.gameState == 3)
             {
                 Interface.gameOver();
                 //Reset Things
-                Collisions.score(-1);
-                PlayerEntity.currentHP(-3);
+                Collisions.score(-1); //-1 is the code to reset
+                PlayerEntity.currentHP(-1); // -1 is the code to reset
+                mainmenumusic.stopmusic();
                 Cosmic.gameState = 0;
                 //runGameLoop();
               
@@ -166,7 +161,7 @@ public class GameLoop
             enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*60, 500 + j*60, 45, 55, true);
             
             if(i<enemy2Count){
-              enemy2[i] = new EnemyEntity("enemyShark.png",specialEnemy,600,49,80,false);
+              enemy2[i] = new EnemyEntity("enemyShark.png",specialEnemy,600,47,80,false);
             }
           }
           
@@ -231,11 +226,7 @@ public class GameLoop
     public static void updateScreen()
     {
       
-      //HUD
-      StdDraw.textLeft(20, 630, "SCORE: " + Collisions.score(0));
-        if (PlayerEntity.currentHP(0) >= 1) StdDraw.picture(30, 30, "playerChar.png", 40,40, 0);
-        if (PlayerEntity.currentHP(0) >= 2) StdDraw.picture(80, 30, "playerChar.png", 40,40, 0);
-        if (PlayerEntity.currentHP(0) == 3) StdDraw.picture(130, 30, "playerChar.png", 40,40, 0);
+      
         
         Interface.updatePositions(player.getFilename(), player.getX(), player.getY(), player.getWidth(), player.getHeight(), player.getRotation());
         
@@ -349,7 +340,18 @@ public class GameLoop
         //laser[i].setActive(false);      
         
         laser[i].update1();
-      } 
+      }
     }
-
+    
+ public static void HUD()
+      {
+       //HUD
+      StdDraw.textLeft(5, 680, "SCORE: " + Collisions.score(0));
+        if (PlayerEntity.currentHP(0) >= 1) StdDraw.picture(30, 30, "playerChar.png", 40,40, 0);
+        if (PlayerEntity.currentHP(0) >= 2) StdDraw.picture(80, 30, "playerChar.png", 40,40, 0);
+        if (PlayerEntity.currentHP(0) == 3) StdDraw.picture(130, 30, "playerChar.png", 40,40, 0); 
+      }
+    
+    
+    
 }//GameLoop
