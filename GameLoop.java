@@ -122,6 +122,8 @@ public class GameLoop
             } 
               if(Cosmic.gameState == 3)
             {
+                mainmenumusic.stopmusic();
+                mainmenumusic.playsound("gameOver.wav");
                 Interface.gameOver();
                 //Reset Things
                 Collisions.score(-1); //-1 is the code to reset
