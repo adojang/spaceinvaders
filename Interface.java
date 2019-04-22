@@ -6,6 +6,7 @@ public class Interface
     public static Font f0 = new Font(type, Font.BOLD, 80);
     public static Font f1 = new Font(type, Font.BOLD, 50);
     public static Font f2 = new Font(type, Font.BOLD, 20);
+    private static int loop = 0;
 
     public static void updatePositions(String filename, double entityX, double entityY, int entityW, int entityH, int entityR)
     {
@@ -15,17 +16,13 @@ public class Interface
     }//updateGameScreen
     
     //DRAW MAIN MENU
-    public static void updateMenu(int a)
+    public static void updateMenu()
     {
 
-       
-         
-        
-
-       
-        if(a == 0)
+        if(loop == 0)
         {
-            
+          StdDraw.picture(512, 350, "Intro.jpeg", 1024, 700, 0);
+            /*
             //StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
           StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
             StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
@@ -47,13 +44,16 @@ public class Interface
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
             StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);
-            
+            */
+          
             StdDraw.show();
+            StdDraw.pause(3000);
+            loop++;
             
         }else
         {
-            StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
-            
+          StdDraw.show();
+            StdDraw.picture(512, 350, "b1.jpeg", 1024, 700, 0);
             StdDraw.setPenColor(243, 241, 239);
             StdDraw.setFont(f2);
             StdDraw.text(512, 450, "CONTROLS:");
@@ -65,13 +65,18 @@ public class Interface
             StdDraw.text(512, 270, "Q - Quit");
             StdDraw.text(512, 240, "<Space> - Shoot");
             
+            //Make it flicker again here :)
+            
+            StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
+            StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);
+            
+            
             StdDraw.setFont(f1);
             if(Cosmic.highscore != 0) StdDraw.text(512, 150, "High Score: " + Cosmic.highscore);
             
-            StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
+            //StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
-            StdDraw.show();
-            
+            StdDraw.show(); 
         }
         
       //Background picture source: https://saundersanimation.files.wordpress.com/2014/06/spacecrododile.jpg
