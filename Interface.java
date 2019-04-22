@@ -7,10 +7,10 @@ public class Interface
     public static Font f1 = new Font(type, Font.BOLD, 50);
     public static Font f2 = new Font(type, Font.BOLD, 20);
 
-    public static void updatePositions(String filename, int entityX, int entityY, int entityW, int entityH, int entityR)
+    public static void updatePositions(String filename, double entityX, double entityY, int entityW, int entityH, int entityR)
     {
 
-        StdDraw.picture(entityX, entityY, filename, entityW, entityH, entityR);
+        StdDraw.picture((int) entityX, (int) entityY, filename, entityW, entityH, entityR);
         
     }//updateGameScreen
     

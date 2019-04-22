@@ -1,15 +1,7 @@
 public class EnemyEntity extends Entity
 {
-  /*
-  private int xPos;
-  private int yPos;
-  private int width;
-  private int height;
-  private String filename;
+
   private static int velocity = 3;
-  */
- private static int velocity = 3;
-  
   private static int xVel;
   private boolean active;
   private static int movementState = 1;
@@ -18,7 +10,7 @@ public class EnemyEntity extends Entity
   private static int cycles = 0;
   private static boolean flag = false;
   
-  EnemyEntity(String f, int x, int y, int w, int h, boolean state)
+  EnemyEntity(String f, double x, double y, int w, int h, boolean state)
   {
     
     filename = f;
@@ -30,53 +22,7 @@ public class EnemyEntity extends Entity
     
   }//create
   
-  /*
-  
-  public String getFilename()
-  {
-    
-    return filename;
-    
-  }
-  public int getX()
-  {
-    
-    return (int)xPos;
-    //If I made a terrible mistake remove (int)
-  }
-  public int getY()
-  {
-    
-    return (int)yPos;
-    
-  }
-  public void setY(int y)
-  {
-    
-    yPos = y;
-    
-  }
-  public void setX(int x)
-    //If I made a terrible mistake remove (int)
-  { 
-    
-    xPos = x;
-    
-  }
- 
-  public int getWidth()
-  {
-    
-    return width;
-    
-  }
-  public int getHeight()
-  {
-    
-    return height;
-    
-  } */
-  
+
    public int getXvel(){
     return xVel;
   }

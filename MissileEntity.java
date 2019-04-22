@@ -1,19 +1,13 @@
-public class MissileEntity
+public class MissileEntity extends Entity
 {
 
-    private double xPos;
-    private double yPos;
-    private int width;
-    private int height;
-    private String filename;
-    //MissileEntity is not included for Entities yet because It's got weird stuff in it.
-  
     private boolean active;
     public double velocity = 10;
     private double yVel;
     private double xVel;
     
-    MissileEntity(String f, int x, int y, int w, int h, boolean state, int m)
+    
+    MissileEntity(String f, double x, double y, int w, int h, boolean state, int m)
     {
         
         filename = f;
@@ -25,51 +19,6 @@ public class MissileEntity
         
     }//create
     
- 
-    public String getFilename()
-    {
-        
-        return filename;
-        
-    } 
-
-    
-    public double getX()
-    {
-        
-        return xPos;
-        
-    }
-    public double getY()
-    {
-        
-        return yPos;
-        
-    }
-    public void setX(double x)
-    {
-        
-        xPos = x;
-        
-    }
-    public void setY(double y)
-    {
-        
-        yPos = y;
-        
-    }
-    public int getWidth()
-    {
-        
-        return width;
-        
-    }
-    public int getHeight()
-    {
-        
-        return height;
-        
-    } 
     public boolean getActive()
     {
         
@@ -100,18 +49,7 @@ public class MissileEntity
         return velocity;
         
     }
-    public void setWidth(int w)
-    {
-        
-        width = w;
-        
-    }
-    public void setHeight(int h)
-    {
-        
-        height = h;
-        
-    }
+
     
     public void update()
     {

@@ -1,17 +1,10 @@
 public class PlayerEntity extends Entity
 {
-/*
-    private int xPos;
-    private int yPos;
-    private int width;
-    private int height;
-    private String filename;
-    */
-    
+
     private int rotation;
     private int velocity = 5;
     
-    PlayerEntity(String f, int x, int y, int w, int h, int r)
+    PlayerEntity(String f, double x, double y, int w, int h, int r)
     {
         
         filename = f;
@@ -22,44 +15,6 @@ public class PlayerEntity extends Entity
         rotation = r;
         
     }//create
-    /*
-    public String getFilename()
-    {
-        
-        return filename;
-        
-    }
-    public int getX()
-    {
-        
-        return (int)xPos;
-        //If I made a terrible mistake remove (int)
-    }
-    public int getY()
-    {
-        
-        return (int)yPos;
-        //If I made a terrible mistake remove (int)
-    }
-    public void setX(int x)
-    {
-        
-        xPos = x;
-        
-    }
-    public int getWidth()
-    {
-        
-        return width;
-        
-    }
-    public int getHeight()
-    {
-        
-        return height;
-        
-    } */
-    // All of this can be removed after we've reviewed it doesn't break any code.
     
     public int getRotation()
     {
@@ -125,12 +80,7 @@ public class PlayerEntity extends Entity
         //if(UserInput.checkUserInput() == "ROTATERIGHT" && rotation > -85) rotation = rotation - 5;
         //rotation through keys
         
-    }
+    }//update
     
-    
-    
-
-
-
 
 }//PlayerEntity

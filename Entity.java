@@ -1,34 +1,21 @@
 public class Entity {
 
-  /* Each entity subclass should inherit these common attributs */
-     int xPos; //Made double because of MissleEntity
-     int yPos; //Made because of MissleEntity
+    
+     double xPos;
+     double yPos;
      int width;
      int height;
      String filename;
-     
-      public String getFilename()
-    { 
-        return filename; 
-    }
-      
-       public int getX()
+
+    //gets and sets//
+    public double getX()
     {
         return xPos;
     }
-    public int getY()
+    public double getY()
     {
         return yPos;
     }
-    public void setX(int x)
-    {
-        xPos = x;
-    }
-    public void setY(int y) //PlayerEntity doesn't use this, but I feel justified in including it here anyway.
-    {
-        yPos = y;
-    }
-    
     public int getWidth()
     {
         return width;
@@ -37,4 +24,18 @@ public class Entity {
     {
         return height;
     }
-}
+    public String getFilename()
+    { 
+        return filename; 
+    }    
+    public void setX(double x)
+    {
+        xPos = x;
+    }
+    public void setY(double y)
+    {
+        yPos = y;
+    }
+    //gets and sets//
+    
+}//class Entity

@@ -41,7 +41,7 @@ public class GameLoop
             initialiseEntities();
             
             //Play main menu music
-            mainmenumusic.playloop("mainthemev2.wav");
+            //mainmenumusic.playloop("mainthemev2.wav");
             while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
             {
                 
@@ -59,7 +59,7 @@ public class GameLoop
                 
                 
                 UserInput.checkUserInput();
-                //Interface.updateMenu();
+
                 if(UserInput.checkKeyPressed("SPACE") == true){
                   spawnCheck=0;
                   Cosmic.gameState = 1;
@@ -71,7 +71,7 @@ public class GameLoop
             }// Main Menu, gameState = 0
             
             //After main menu exit, will go down, so this ensures that music is stopped
-            mainmenumusic.stopmusic(); //Checks if gameState is 0. Here it will be 1 so music will stop playing.
+            //mainmenumusic.stopmusic(); //Checks if gameState is 0. Here it will be 1 so music will stop playing.
             
             while(/*UserInput.checkKeyPressed("QUIT") == false*/ Cosmic.gameState == 1)
             {
@@ -150,7 +150,7 @@ public class GameLoop
             {
                 Interface.gameOver();
                 Cosmic.gameState = 0;
-                runGameLoop();
+                //runGameLoop();
               
                 
             }//check if game over screen
@@ -218,7 +218,7 @@ public class GameLoop
         {
 
             MissileEntity.shoot(missiles, currentPowerUpActive, player);
-            shoot.playsound("shoot.wav");
+            //shoot.playsound("shoot.wav");
             //Shoot.wav was provided by a housemate and heavily edited and distorted by me. Original work.
             
             missileTime = false;
@@ -358,7 +358,7 @@ public class GameLoop
           laser[i].setY(enemy2[i].getY());
           laser[i].setXVel(enemy2[i].getXvel());
           laser[i].setYVel(2);
-          shoot.playsound("shoot.wav");
+          //shoot.playsound("shoot.wav");
         }
         //laser[i].setActive(false);      
         
