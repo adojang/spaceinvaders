@@ -26,7 +26,8 @@ public class Interface
         if(a == 0)
         {
             
-            StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
+            //StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
+          StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
             StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
             
             StdDraw.setPenColor(243, 241, 239);
@@ -88,7 +89,7 @@ public class Interface
 
       for(int i=5;i>=0;i--)
       {
-       StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 180); 
+       StdDraw.picture(512, 350, "b0.jpeg", 1024, 700, 0); 
         StdDraw.text(512, 350, "GAME OVER");
        StdDraw.text(512, 200, "SCORE:" + " " + String.valueOf(Collisions.score(0)));
        StdDraw.text(512, 100, "Restart in... " + i);

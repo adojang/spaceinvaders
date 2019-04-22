@@ -82,7 +82,7 @@ public class GameLoop
               
                 StdDraw.clear();
                 // https://wallpaperaccess.com/full/436082.png
-                StdDraw.picture(512, 350, "b3.jpeg", 1024, 700, 0); 
+                StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 0); 
                 StdDraw.setPenColor(StdDraw.WHITE);
                 
                 UserInput.checkUserInput();
@@ -156,7 +156,7 @@ public class GameLoop
             
             missiles[i] = new MissileEntity("missileChar.png", 0, 0, 15, 15, false, 0);
             if(i< enemy2Count){
-              laser[i] = new MissileEntity("missileChar.png",0,0,15,15,false,0);
+              laser[i] = new MissileEntity("enemyFire.png",0,0,15,15,false,0);
               
             }
         }//missiles creation
@@ -167,10 +167,10 @@ public class GameLoop
           for(int j = 0; j < enemyCount; j++)
           {
             
-            enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*60, 500 + j*60, 50, 50, true);
+            enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*60, 500 + j*60, 45, 55, true);
             
             if(i<enemy2Count){
-              enemy2[i] = new EnemyEntity("playerChar.png",specialEnemy,600,75,75,false);
+              enemy2[i] = new EnemyEntity("enemyShark.png",specialEnemy,600,49,80,false);
             }
           }
           

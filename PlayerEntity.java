@@ -1,6 +1,5 @@
 public class PlayerEntity extends Entity
 {
-
     private int rotation;
     private int velocity = 5;
     private static int HP = 3;
