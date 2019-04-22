@@ -130,6 +130,18 @@ public class GameLoop
                 //bugchecking
             
             } 
+              if(Cosmic.gameState == 3)
+            {
+                Interface.gameOver();
+                //Reset Things
+                Collisions.score(-1);
+                PlayerEntity.currentHP(-3);
+                Cosmic.gameState = 0;
+                //runGameLoop();
+              
+                
+            }//check if game over screen
+            
         }//while true, able to switch between gamestates
         
     }// RunGameLoop

@@ -87,19 +87,6 @@ public class UserInput
         //GAME OVER
         Cosmic.gameState = 3;
       }
-                
-                
-                
-            
-            
-            if(Cosmic.gameState == 3)
-            {
-                Interface.gameOver();
-                Cosmic.gameState = 0;
-                //runGameLoop();
-              
-                
-            }//check if game over screen
 
     }
     

@@ -80,6 +80,7 @@ public class Collisions
                     enemy2Hp[m]++;
                     if(enemy2Hp[m]==Hp){
                       enemy2[m].setActive(false);
+                      score(50);
                       enemy2Hp[m]=0;
                     }
                     
@@ -127,7 +128,14 @@ public class Collisions
     
       public static int score(int add)
     {
+        if (add == -1) {
+          
+          playerscore = 0;
+        }
+          else
+        {
         playerscore = playerscore + add;
+        }
        // System.out.println(playerscore);
        return playerscore;
       }
