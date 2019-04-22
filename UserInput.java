@@ -69,4 +69,39 @@ public class UserInput
         
     }//checkKeyPressed
     
+    public static void actions()
+    {
+      
+      if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
+      
+      if (UserInput.checkKeyPressed("SCREENSHOT") == true)
+      {
+        StdDraw.save("screenshot.png");
+        StdDraw.pause(150);
+      }
+      
+      //REMOVE ME BEFORE FINAL
+      if (UserInput.checkKeyPressed("DEBUG") == true)
+      {
+        //Use this as a debugging key for now, assigned to key 'P'
+        //GAME OVER
+        Cosmic.gameState = 3;
+      }
+                
+                
+                
+            
+            
+            if(Cosmic.gameState == 3)
+            {
+                Interface.gameOver();
+                Cosmic.gameState = 0;
+                //runGameLoop();
+              
+                
+            }//check if game over screen
+
+    }
+    
+    
 }//userInout

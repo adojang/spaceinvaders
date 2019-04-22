@@ -7,10 +7,10 @@ public class Interface
     public static Font f1 = new Font(type, Font.BOLD, 50);
     public static Font f2 = new Font(type, Font.BOLD, 20);
 
-    public static void updatePositions(String filename, int entityX, int entityY, int entityW, int entityH, int entityR)
+    public static void updatePositions(String filename, double entityX, double entityY, int entityW, int entityH, int entityR)
     {
 
-        StdDraw.picture(entityX, entityY, filename, entityW, entityH, entityR);
+        StdDraw.picture((int) entityX, (int) entityY, filename, entityW, entityH, entityR);
         
     }//updateGameScreen
     
@@ -41,7 +41,7 @@ public class Interface
             StdDraw.text(512, 240, "<Space> - Shoot");
             
             StdDraw.setFont(f1);
-            if(Cosmic.highscore != 0) StdDraw.text(512, 30, "High Score: " + Cosmic.highscore);
+            if(Cosmic.highscore != 0) StdDraw.text(512, 150, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             
@@ -65,7 +65,7 @@ public class Interface
             StdDraw.text(512, 240, "<Space> - Shoot");
             
             StdDraw.setFont(f1);
-            if(Cosmic.highscore != 0) StdDraw.text(512, 30, "High Score: " + Cosmic.highscore);
+            if(Cosmic.highscore != 0) StdDraw.text(512, 150, "High Score: " + Cosmic.highscore);
             
             StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
             

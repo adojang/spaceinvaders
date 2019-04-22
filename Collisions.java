@@ -73,7 +73,7 @@ public class Collisions
                 for(int m=0;m<GameLoop.enemy2Count;m++){
                   if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true ){
                     
-                    StdDraw.text(800,200,"HIT");
+                    //StdDraw.text(800,200,"HIT");
                     missiles[i].setActive(false);
                     missiles[i].setX(0);
                     missiles[i].setY(0);
@@ -86,11 +86,13 @@ public class Collisions
                   }
                   if(hitDetection( laser[m].getX(), laser[m].getY(), player.getX(), player.getY() )  == true ){
                     
-                    StdDraw.text(800,200,"HIT");
+                    //StdDraw.text(800,200,"HIT");
                     laser[m].setActive(false);
                     laser[m].setX(0);
                     laser[m].setY(0);
+                    //This is where our 'HP' is calculated
                     hits++;
+                    PlayerEntity.currentHP(-1);
                     if(hits==3){
                       Cosmic.gameState = 3;
                       hits=0;
@@ -110,7 +112,7 @@ public class Collisions
             if(hitDetection(  player.getX(), player.getY(), powerUps[i].getX(), powerUps[i].getY()    ) == true  && powerUps[i].getActive() == true       )
             {
                 
-                StdDraw.text(300,400,"POWERUP");
+                //StdDraw.text(300,400,"POWERUP");
                 
                 GameLoop.currentPowerUpActive = powerUps[i].getPowerUpType();
                 powerUps[i].setActive(false);

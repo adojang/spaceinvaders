@@ -99,6 +99,8 @@ public class GameLoop
                 
                 loopCounter++;
                 
+                UserInput.actions(); //All the if statements for screenshot quit ?cheats? etc.
+                
                 if(loopCounter >= missileRapidSpeed)
                 {
                     loopCounter = 0;
@@ -115,46 +117,19 @@ public class GameLoop
                         missileRapidSpeed = 15;
                     }
                 }
-                
-                
-                if(UserInput.checkKeyPressed("QUIT") == true) System.exit(1);
-                
-                //bugchecking
-                StdDraw.text(500,600,Integer.toString(Cosmic.highscore));
-                
-                //StdDraw.text(300,600,Boolean.toString(missileTime));
-                //bugchecking
-                
+                 
                 StdDraw.show();
                 StdDraw.pause(10); //games speed
                 
-                if (UserInput.checkKeyPressed("SCREENSHOT") == true)
-                 {
-                  StdDraw.save("screenshot.png");
-                  StdDraw.pause(150);
-                 }
-                
-                //REMOVE ME BEFORE FINAL
-                if (UserInput.checkKeyPressed("DEBUG") == true)
-                 {
-                  //Use this as a debugging key for now, assigned to key 'P'
-                  //GAME OVER
-                 Cosmic.gameState = 3;
-                 }
                 
                 
+                //bugchecking
+                //StdDraw.text(500,600,Integer.toString(Cosmic.highscore));
                 
-            }// While in active game, gameState = 1
+                //StdDraw.text(300,600,Boolean.toString(missileTime));
+                //bugchecking
             
-            if(Cosmic.gameState == 3)
-            {
-                Interface.gameOver();
-                Cosmic.gameState = 0;
-                //runGameLoop();
-              
-                
-            }//check if game over screen
-            
+            } 
         }//while true, able to switch between gamestates
         
     }// RunGameLoop
@@ -249,7 +224,10 @@ public class GameLoop
     {
       
       //HUD
-      StdDraw.textLeft(10, 680, "SCORE: " + Collisions.score(0));
+      StdDraw.textLeft(20, 630, "SCORE: " + Collisions.score(0));
+        if (PlayerEntity.currentHP(0) >= 1) StdDraw.picture(30, 30, "playerChar.png", 40,40, 0);
+        if (PlayerEntity.currentHP(0) >= 2) StdDraw.picture(80, 30, "playerChar.png", 40,40, 0);
+        if (PlayerEntity.currentHP(0) == 3) StdDraw.picture(130, 30, "playerChar.png", 40,40, 0);
         
         Interface.updatePositions(player.getFilename(), player.getX(), player.getY(), player.getWidth(), player.getHeight(), player.getRotation());
         

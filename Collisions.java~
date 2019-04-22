@@ -80,6 +80,7 @@ public class Collisions
                     enemy2Hp[m]++;
                     if(enemy2Hp[m]==Hp){
                       enemy2[m].setActive(false);
+                      enemy2Hp[m]=0;
                     }
                     
                   }
@@ -92,6 +93,10 @@ public class Collisions
                     hits++;
                     if(hits==3){
                       Cosmic.gameState = 3;
+                      hits=0;
+                      for(int q=0;q<GameLoop.enemy2Count;q++){
+                        enemy2Hp[m]=0;
+                      }
                     }
                   }//Checks if enemy laser hits player
                 }
