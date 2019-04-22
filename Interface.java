@@ -7,7 +7,6 @@ public class Interface
     public static Font f1 = new Font(type, Font.BOLD, 50);
     public static Font f2 = new Font(type, Font.BOLD, 20);
     private static int loop = 0;
-
     public static void updatePositions(String filename, double entityX, double entityY, int entityW, int entityH, int entityR)
     {
 
@@ -52,6 +51,8 @@ public class Interface
             
         }else
         {
+          
+     
           StdDraw.show();
             StdDraw.picture(512, 350, "b1.jpeg", 1024, 700, 0);
             StdDraw.setPenColor(243, 241, 239);
@@ -64,9 +65,10 @@ public class Interface
             StdDraw.text(512, 300, "P - Screenshot");
             StdDraw.text(512, 270, "Q - Quit");
             StdDraw.text(512, 240, "<Space> - Shoot");
-            
+            StdDraw.text(512, 210, "O - Lose Hope");
             //Make it flicker again here :)
             
+        
             StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
             StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);
             
@@ -85,22 +87,40 @@ public class Interface
     
     public static void gameOver()
     {
-      //Background Source:
-      // https://wallpaperaccess.com/full/436082.png
       Font gfont = new Font("Monospaced", Font.BOLD, 60);
       StdDraw.setFont(gfont);
-      
-      if (Collisions.score(0) > Cosmic.highscore) Cosmic.highscore = Collisions.score(0);
-
-      for(int i=5;i>=0;i--)
+      if (Collisions.score(0) > Cosmic.highscore) 
       {
-       StdDraw.picture(512, 350, "b0.jpeg", 1024, 700, 0); 
+        Cosmic.highscore = Collisions.score(0); //Set HighScore
+       
+        for(int i=4;i>=0;i--)
+      {
+       StdDraw.picture(512, 350, "victory.jpeg", 1024, 700, 0);
+       StdDraw.setPenColor(StdDraw.ORANGE);
+        StdDraw.text(512, 660, "HIGHSCORE!");
+        StdDraw.setPenColor(StdDraw.RED);
+       StdDraw.text(512, 200, "SCORE:" + " " + String.valueOf(Collisions.score(0)));
+        StdDraw.setPenColor(243, 241, 239);
+       StdDraw.text(512, 100, "Restart in... " + i);
+       StdDraw.pause(1000);
+       StdDraw.show();
+        }
+      }
+      else
+      {
+    
+      for(int i=4;i>=0;i--)
+      {
+       StdDraw.picture(512, 350, "b0.jpeg", 1024, 700, 0);
+       StdDraw.setPenColor(StdDraw.RED);
         StdDraw.text(512, 350, "GAME OVER");
+        StdDraw.setPenColor(243, 241, 239);
        StdDraw.text(512, 200, "SCORE:" + " " + String.valueOf(Collisions.score(0)));
        StdDraw.text(512, 100, "Restart in... " + i);
        StdDraw.pause(1000);
        StdDraw.show();
       
+      }
       }
  
     }
