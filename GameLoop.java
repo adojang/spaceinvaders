@@ -1,6 +1,6 @@
 public class GameLoop
 {
-    
+    /*Global Variables */
     public static PlayerEntity player;
     
     public static int missileCount = 100;
@@ -26,12 +26,11 @@ public class GameLoop
     public static int powerUpTime = 150;
     public static Audio mainmenumusic = new Audio();
     public static Audio shoot = new Audio();
-    
+    /* Difficulty Settings */
     public static double difficulty = 1;
     public static int level = 1;
     
-    
-    
+ 
     public static void runGameLoop()
     {
       
@@ -43,7 +42,7 @@ public class GameLoop
             
             //Play main menu music
             mainmenumusic.playloop("mainthemev2.wav");
-            while(/*UserInput.checkKeyPressed("SPACE") == false*/ Cosmic.gameState == 0)
+            while(Cosmic.gameState == 0)
             {
                 
                 Interface.updateMenu();
@@ -58,17 +57,12 @@ public class GameLoop
                 
                 StdDraw.pause(10);
                 
-            }// Main Menu, gameState = 0
-            
-            //After main menu exit, will go down, so this ensures that music is stopped
-            
-            //mainmenumusic.stopmusic(); //Checks if gameState is 0. Here it will be 1 so music will stop playing.
-            
-            while(/*UserInput.checkKeyPressed("QUIT") == false*/ Cosmic.gameState == 1)
-            {
+            } /*  Main Menu, gameState = 0 */
 
+            while(Cosmic.gameState == 1)
+            {
+              
                 StdDraw.clear();
-                // https://wallpaperaccess.com/full/436082.png
                 StdDraw.picture(512, 350, "b4.jpeg", 1024, 700, 0); 
                 StdDraw.setPenColor(StdDraw.WHITE);
                 
@@ -110,9 +104,9 @@ public class GameLoop
                 
                  
                 StdDraw.show();
-                StdDraw.pause(10); //games speed
+                StdDraw.pause(10); //Game Speed
   
-            }
+            }  //Game Loop, gameState == 1
         
             if(Cosmic.gameState == 3)
             {
@@ -127,36 +121,31 @@ public class GameLoop
                 mainmenumusic.stopmusic();
                 level = 0;
                 Cosmic.gameState = 0;
-                //runGameLoop();
+               
         
-            }//check if game over screen
+            }//Check if gameState == 3 then Gameover
             
-        }//while true, able to switch between gamestates
+        }//While true, able to switch between gamestates
         
     }// RunGameLoop
     
     public static void initialiseEntities()
     {
-        
         if(level == 1) player = new PlayerEntity("playerChar.png", 512, 50, 40, 40, 0);
-        
 
         for(int i = 0; i < missileCount; i++)
         {
-            
             missiles[i] = new MissileEntity("missileChar.png", 0 , 0 , 15, 15, false, 0);
             if(i< enemy2Count){
-              laser[i] = new MissileEntity("enemyFire.png",0,0,15,15,false,0);
-              
+              laser[i] = new MissileEntity("enemyFire.png",0,0,15,15,false,0); 
             }
-        }//missiles creation
+        }//Missiles creation
         
         for(int i = 0; i < enemyCount; i++)
         {
           specialEnemy=(specialEnemy+ 200)+ 15;
           for(int j = 0; j < enemyCount; j++)
           {
-            
             enemies[i][j] = new EnemyEntity("enemyChar.png", 200 + i*50, 450 + j*50, 40, 40, true);
             
             if(i<enemy2Count){
@@ -164,7 +153,7 @@ public class GameLoop
             }
           }
           
-        }//enemy creation
+        }//Enemy creation
         specialEnemy=267;
         
         if(level == 1)
@@ -174,7 +163,7 @@ public class GameLoop
                 
                 powerUps[i] = new PowerUpEntity("powerUpChar.png", 0, 0, 30, 30, 0, false);
                 
-            }//powerup creation
+            }//Powerup creation
         }
         
         
@@ -184,32 +173,24 @@ public class GameLoop
     
     public static void entityMovement()
     {
-        
         player.update();
         
         EnemyEntity.update(enemies);
         
         for(int i = 0; i < missileCount; i++)
         {
-            
             missiles[i].update();
-            
         }
          
         if(UserInput.checkKeyPressed("SPACE") == true && missileTime == true)
         {
-
             MissileEntity.shoot(missiles, currentPowerUpActive, player);
             shoot.playsound("shoot.wav");
-            //Shoot.wav was provided by a housemate and heavily edited and distorted by me. Original work.
-            
             missileTime = false;
-            
-        }//check if user presses space and if a missile can be shot
+        }//Check if user presses space and if a missile can be shot
         
         if(enemyCheck(enemies)==false){
           
-          /**/
             if(level % 5 == 0)
             {
                 for(int i = 0; i < enemy2Count; i++)
@@ -221,8 +202,7 @@ public class GameLoop
                         spawnCheck=1;
                     }
                     enemy2[i].update1(enemy2,angleCounter+=1);
-                    enemyShoot(laser);
-                    
+                    enemyShoot(laser);  
                 }
                 
                 if(enemy2[0].getActive() == false && enemy2[1].getActive() == false && enemy2[2].getActive() == false )
@@ -232,27 +212,21 @@ public class GameLoop
                     spawnCheck = 0;
                     initialiseEntities();
                 }
-                
-                
-            }else
+            }
+            else
             {
                 difficulty = difficulty + 0.2;
                 level = level + 1;
                 initialiseEntities();
-                
             }
-            
-          
         }
         
-        
+     
     }//entityMovement
     
     public static void updateScreen()
     {
-      
-      
-        
+
         Interface.updatePositions(player.getFilename(), player.getX(), player.getY(), player.getWidth(), player.getHeight(), player.getRotation());
         
         for(int i = 0; i < enemy2Count; i++)
@@ -271,27 +245,20 @@ public class GameLoop
              
         for(int i = 0; i < missileCount; i++)
         {
-            
             if(missiles[i].getActive() == true) Interface.updatePositions(missiles[i].getFilename(), (int) missiles[i].getX(), (int) missiles[i].getY(), missiles[i].getWidth(), missiles[i].getHeight(), 0);
-            
         }
         
         for(int i = 0; i < enemyCount; i++)
         {
             for(int j = 0; j < enemyCount; j++)
             {
-                
                 if(enemies[i][j].getActive() == true) Interface.updatePositions(enemies[i][j].getFilename(), enemies[i][j].getX(), enemies[i][j].getY(), enemies[i][j].getWidth(), enemies[i][j].getHeight(), 0);
-                
             }
-            
         }
         
         for(int i = 0; i < maxPowerUpCount; i++)
         {
-            
             if(powerUps[i].getActive() == true) Interface.updatePositions(powerUps[i].getFilename(), powerUps[i].getX(), powerUps[i].getY(), powerUps[i].getWidth(), powerUps[i].getHeight(), 0);
-            
         }
         
     }//updateScreen
@@ -327,12 +294,10 @@ public class GameLoop
     
     public static void activatePowerUps()
     {
-        
-        if(currentPowerUpActive == 2)
-        {
-            
-            missileRapidSpeed = 5;
 
+        if(currentPowerUpActive == 2)
+        {     
+            missileRapidSpeed = 5;
         }
     
     }//activatePowerUps
@@ -346,12 +311,10 @@ public class GameLoop
           
         }
       }
-      
       return false;
-      
-      
     }
     
+    //Shark missile
     public static void enemyShoot(MissileEntity zap[]){
       for(int i =0; i< enemy2Count; i++){
         if(zap[i].getActive() == false && StdRandom.bernoulli(0.3)==true && enemy2[i].getActive()==true){
@@ -361,9 +324,7 @@ public class GameLoop
           laser[i].setXVel(enemy2[i].getXvel());
           laser[i].setYVel(2);
           shoot.playsound("shoot.wav");
-        }
-        //laser[i].setActive(false);      
-        
+        }   
         laser[i].update1();
       }
     }
@@ -372,9 +333,7 @@ public class GameLoop
       {
        //HUD
         StdDraw.textLeft(5, 650, "SCORE: " + Collisions.score(0));
-          
-         
-          
+      
           if(spawnCheck==1)
           {
               StdDraw.textLeft(400, 650, "BOSSFIGHT");
@@ -382,8 +341,7 @@ public class GameLoop
           {
               StdDraw.textLeft(400, 650, "LEVEL" + level);
           }
-          
-          
+            
         if (PlayerEntity.currentHP(0) >= 1) StdDraw.picture(30, 30, "playerChar.png", 40,40, 0);
         if (PlayerEntity.currentHP(0) >= 2) StdDraw.picture(80, 30, "playerChar.png", 40,40, 0);
         if (PlayerEntity.currentHP(0) == 3) StdDraw.picture(130, 30, "playerChar.png", 40,40, 0); 

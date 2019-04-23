@@ -12,47 +12,22 @@ public class Interface
 
         StdDraw.picture((int) entityX, (int) entityY, filename, entityW, entityH, entityR);
         
-    }//updateGameScreen
+    }
     
-    //DRAW MAIN MENU
+    //Draw Main Menu
     public static void updateMenu()
     {
 
         if(loop == 0)
         {
           StdDraw.picture(512, 350, "Intro.jpeg", 1024, 700, 0);
-            /*
-            //StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
-          StdDraw.picture(512, 350, "mainMenuBackGround.png", 1024, 700, 0);
-            StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
-            
-            StdDraw.setPenColor(243, 241, 239);
-            StdDraw.setFont(f2);
-            StdDraw.text(512, 450, "CONTROLS:");
-            StdDraw.text(512, 420, "W - Up");
-            StdDraw.text(512, 390, "A - Left");
-            StdDraw.text(512, 360, "S - Down");
-            StdDraw.text(512, 330, "D - Right");
-            StdDraw.text(512, 300, "P - Screenshot");
-            StdDraw.text(512, 270, "Q - Quit");
-            StdDraw.text(512, 240, "<Space> - Shoot");
-            
-            StdDraw.setFont(f1);
-            if(Cosmic.highscore != 0) StdDraw.text(512, 150, "High Score: " + Cosmic.highscore);
-            
-            StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
-            
-            StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);
-            */
-          
             StdDraw.show();
             StdDraw.pause(3000);
             loop++;
             
         }else
         {
-          
-     
+
           StdDraw.show();
             StdDraw.picture(512, 350, "b1.jpeg", 1024, 700, 0);
             StdDraw.setPenColor(243, 241, 239);
@@ -65,26 +40,17 @@ public class Interface
             StdDraw.text(512, 300, "P - Screenshot");
             StdDraw.text(512, 270, "Q - Quit");
             StdDraw.text(512, 240, "<Space> - Shoot");
-            StdDraw.text(512, 210, "O - Lose Hope");
-            //Make it flicker again here :)
-            
-        
+            StdDraw.text(512, 210, "O - Lose Hope");       
             StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
-            StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);
-            
-            
+            StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);  
             StdDraw.setFont(f1);
             if(Cosmic.highscore != 0) StdDraw.text(512, 150, "High Score: " + Cosmic.highscore);
-            
-            //StdDraw.picture(200, 350, "dinosaurSprite.png", 200, 200, 0);
-            
             StdDraw.show(); 
         }
-        
-      //Background picture source: https://saundersanimation.files.wordpress.com/2014/06/spacecrododile.jpg
-        
-    }//updateGameScreen
+      
+    } //mainMenu
     
+    //Draw GameOver
     public static void gameOver()
     {
       Font gfont = new Font("Monospaced", Font.BOLD, 60);
@@ -123,16 +89,9 @@ public class Interface
       }
       }
  
-    }
+    } //gameOver
+}
 
 
-
-
-}//Interface
-
-/* Extra Wallpapers for Use later on:
- * Level 2: use b3 - https://wallpaperaccess.com/full/348158.png
- * Bossfight use b4 - https://wallpaperaccess.com/full/43078.jpg
- * */
 
 

@@ -1,13 +1,12 @@
 public class Entity implements EntityInterface{
 
-    
      double xPos;
      double yPos;
      int width;
      int height;
      String filename;
 
-    //gets and sets//
+    //Gets and Sets values common to all Entity* classes
     public double getX()
     {
         return xPos;
@@ -36,6 +35,5 @@ public class Entity implements EntityInterface{
     {
         yPos = y;
     }
-    //gets and sets//
-    
-}//class Entity
+   
+}

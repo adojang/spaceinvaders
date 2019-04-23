@@ -72,11 +72,9 @@ public class UserInput
         StdDraw.pause(150);
       }
       
-      //REMOVE ME BEFORE FINAL
+ 
       if (UserInput.checkKeyPressed("DEBUG") == true)
       {
-        //Use this as a debugging key for now, assigned to key 'P'
-        //GAME OVER
         Cosmic.gameState = 3;
       }
 

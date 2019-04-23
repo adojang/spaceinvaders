@@ -1,5 +1,7 @@
 public interface EntityInterface {
   
+  //Implemented by Entity class
+  
     public double getX();
     
     public double getY();

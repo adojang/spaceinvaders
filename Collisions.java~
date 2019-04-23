@@ -70,7 +70,7 @@ public class Collisions
                         GameLoop.resetPlayer();
                         
                     }//check for player and enemies
-                    
+
                     if(enemies[j][k].getY() <= 0 && (enemies[j][k].getActive() == true))
                     {
                         Cosmic.gameState = 3;
@@ -80,6 +80,15 @@ public class Collisions
                     
                 }//k
                 for(int m=0;m<GameLoop.enemy2Count;m++){
+                  if(hitDetection(  player.getX(), player.getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true       )
+                  {
+                    //Set gamestate to gameover
+                    Cosmic.gameState = 3;
+                    GameLoop.difficulty=1;
+                    GameLoop.resetPlayer();
+                    
+                  }
+                                      
                   if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true ){
                     
                     //If a bullet strikes enemy type two

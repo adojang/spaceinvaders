@@ -1,4 +1,4 @@
-public class Entity {
+public class Entity implements EntityInterface{
 
     
      double xPos;

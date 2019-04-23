@@ -2,9 +2,8 @@
 public class Collisions
 {
   public static int playerscore = 0;
-  //private static int hits=0; //Removed due to implementing HP for the player. See HUD in GameLoop for more detail
   private static int[] enemy2Hp=new int[GameLoop.enemyCount];
-  private static int Hp=3;
+  private static int Hp=5;
     public static boolean hitDetection(double x1, double y1, double x2, double y2)
     {
         boolean xFlag = false;
@@ -53,7 +52,7 @@ public class Collisions
                     if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
                     {
                         
-                        //If a bullet strikes enemy type one
+                        //Detects if player missile has hit basic enemy type.
                         missiles[i].setActive(false);
                         missiles[i].setX(0);
                         missiles[i].setY(0);
@@ -64,21 +63,23 @@ public class Collisions
                     
                     if(hitDetection(  player.getX(), player.getY(), enemies[j][k].getX(), enemies[j][k].getY()    ) == true  && enemies[j][k].getActive() == true       )
                     {
+                      
                         //Set gamestate to gameover
                         Cosmic.gameState = 3;
                         GameLoop.difficulty=1;
                         GameLoop.resetPlayer();
                         
-                    }//check for player and enemies
+                    }
 
                     if(enemies[j][k].getY() <= 0 && (enemies[j][k].getActive() == true))
                     {
+                      //Set gamestate to gameover
                         Cosmic.gameState = 3;
                         GameLoop.difficulty=1;
                         GameLoop.resetPlayer();
                     }
                     
-                }//k
+                }
                 for(int m=0;m<GameLoop.enemy2Count;m++){
                   if(hitDetection(  player.getX(), player.getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true       )
                   {
@@ -91,7 +92,7 @@ public class Collisions
                                       
                   if(hitDetection(  missiles[i].getX(), missiles[i].getY(), enemy2[m].getX(), enemy2[m].getY()    ) == true  && enemy2[m].getActive() == true ){
                     
-                    //If a bullet strikes enemy type two
+                    ////Detects if player missile collides with shark
                     missiles[i].setActive(false);
                     missiles[i].setX(0);
                     missiles[i].setY(0);
@@ -105,7 +106,7 @@ public class Collisions
                   }
                   if(hitDetection( laser[m].getX(), laser[m].getY(), player.getX(), player.getY() )  == true ){
                     
-                    //If something hits US
+                    //Checks if shark missle hits player
                     laser[m].setActive(false);
                     laser[m].setX(0);
                     laser[m].setY(0);
@@ -132,18 +133,18 @@ public class Collisions
             if(hitDetection(  player.getX(), player.getY(), powerUps[i].getX(), powerUps[i].getY()    ) == true  && powerUps[i].getActive() == true       )
             {
                 
-                //StdDraw.text(300,400,"POWERUP");
+                //Check for player and powerups
                 
                 GameLoop.currentPowerUpActive = powerUps[i].getPowerUpType();
                 powerUps[i].setActive(false);
                 GameLoop.activePowerUp = true;
                 GameLoop.powerUpCounter = 0;
                 
-            }//check for player and power ups
+            }
                 
-        }//i
+        }
         
-    }//detectHits
+    }
     
       public static int score(int add)
     {
@@ -155,13 +156,6 @@ public class Collisions
         {
         playerscore = playerscore + add;
         }
-       // System.out.println(playerscore);
        return playerscore;
-      }
-      /*
-      public static int score()
-      {
-       return playerscore; 
-      } */
-    
-}//Collisions
+      }  
+}
