@@ -179,7 +179,7 @@ public class MissileEntity extends Entity
         if(active == true)
         {
             
-            yPos = yPos - yVel;
+            yPos = yPos - (yVel+(GameLoop.difficulty/3));
             xPos = xPos + xVel;
             
             if(yPos > 700 || xPos > 1024 || xPos < 0)

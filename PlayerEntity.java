@@ -59,7 +59,7 @@ public class PlayerEntity extends Entity
             rotation = 90 + (int) Math.toDegrees(radians);
             
         }
-        if(StdDraw.mouseX() < xPos && StdDraw.mouseY() < yPos)
+        /*if(StdDraw.mouseX() < xPos && StdDraw.mouseY() < yPos)
         {
             
             radians = Math.atan((StdDraw.mouseY()-yPos)/(StdDraw.mouseX()-xPos));
@@ -72,7 +72,7 @@ public class PlayerEntity extends Entity
             radians = Math.atan((StdDraw.mouseY()-yPos)/(StdDraw.mouseX()-xPos));
             rotation = (int) Math.toDegrees(radians) - 90;
             
-        }
+        }*/
         //rotation through mouse
      
         //rotation through keys

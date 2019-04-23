@@ -11,7 +11,7 @@ public class PowerUpEntity extends Entity
     
     private boolean active;
     private int powerUpType;
-    public static double spawnOdds = 0.001;
+    public static double spawnOdds = 0.003;
     
     /*
      Power Up Types:

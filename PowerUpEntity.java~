@@ -1,11 +1,14 @@
-public class PowerUpEntity
+public class PowerUpEntity extends Entity
 {
-    
+    /*
     private int xPos;
     private int yPos;
     private int width;
     private int height;
     private String filename;
+    
+    */
+    
     private boolean active;
     private int powerUpType;
     public static double spawnOdds = 0.001;
@@ -17,7 +20,7 @@ public class PowerUpEntity
      3 - giant missile
      */
     
-    PowerUpEntity(String f, int x, int y, int w, int h, int p, boolean state)
+    PowerUpEntity(String f, double x, double y, int w, int h, int p, boolean state)
     {
         
         xPos = x;
@@ -31,22 +34,23 @@ public class PowerUpEntity
         
     }
     
-    public int getX()
+    /*public double getX()
     {
         return xPos;
     }
-    public int getY()
+    public double getY()
     {
         return yPos;
     }
-    public void setX(int x)
+    public void setX(double x)
     {
         xPos = x;
     }
-    public void setY(int y)
+    public void setY(double y)
     {
         yPos = y;
-    }
+    }*/
+    
     public boolean getActive()
     {
         return active;
@@ -55,22 +59,22 @@ public class PowerUpEntity
     {
         active = state;
     }
-    public int getWidth()
+    /*public int getWidth()
     {
         return width;
     }
     public int getHeight()
     {
         return height;
-    }
+    }*/
     public int getPowerUpType()
     {
         return powerUpType;
     }
-    public String getFilename()
+    /*public String getFilename()
     {
         return filename;
-    }
+    }*/
     
     public static PowerUpEntity create()
     {

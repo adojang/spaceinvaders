@@ -1,14 +1,14 @@
 public class EnemyEntity extends Entity
 {
 
-  private static int velocity = 3;
-  private static int xVel;
-  private boolean active;
-  private static int movementState = 1;
-  private static int specialState =1;
-  private static int verticalState=1;
-  private static int cycles = 0;
-  private static boolean flag = false;
+    private static int velocity = 3;
+    private static int xVel;
+    private boolean active;
+    private static int movementState = 1;
+    private static int specialState =1;
+    private static int verticalState=1;
+    private static int cycles = 0;
+    private static boolean flag = false;
   
   EnemyEntity(String f, double x, double y, int w, int h, boolean state)
   {
@@ -50,7 +50,7 @@ public class EnemyEntity extends Entity
         for(int j = 0; j < GameLoop.enemyCount; j++)
         {
           
-          enemies[i][j].setX(enemies[i][j].getX() + velocity);
+            enemies[i][j].setX(enemies[i][j].getX() + (velocity * GameLoop.difficulty));
           
         }
         
@@ -104,7 +104,7 @@ public class EnemyEntity extends Entity
         for(int j = 0; j < GameLoop.enemyCount; j++)
         {
           
-          enemies[i][j].setX(enemies[i][j].getX() - velocity);
+          enemies[i][j].setX(enemies[i][j].getX() - (velocity * GameLoop.difficulty));
           
         }
         
@@ -124,13 +124,13 @@ public class EnemyEntity extends Entity
     int range=400;
     for(int i=0;i< GameLoop.enemy2Count;i++){
       if(verticalState ==1){
-        enemy[i].setY(enemy[i].getY()-1);
+        enemy[i].setY(enemy[i].getY() - (1 + 0.1*GameLoop.difficulty));
         if(enemy[i].getY() <=175){
           verticalState=2;
         }
       }
       if(verticalState==2){
-        enemy[i].setY(enemy[i].getY()+1);
+        enemy[i].setY(enemy[i].getY() + (1 + 0.1*GameLoop.difficulty));
         if(enemy[i].getY() >= 665){
           verticalState=1;
         }        
@@ -138,7 +138,7 @@ public class EnemyEntity extends Entity
       }
       
       if(specialState==1){
-        enemy[i].setX(enemy[i].getX()+1);
+        enemy[i].setX(enemy[i].getX() + (1 + 0.1*GameLoop.difficulty));
         xVel=1;
         if(enemy[i].getX()>=(512+range)){
           specialState=2;
@@ -148,7 +148,7 @@ public class EnemyEntity extends Entity
       }
       
       if(specialState==2){
-        enemy[i].setX(enemy[i].getX()-1);
+        enemy[i].setX(enemy[i].getX() - (1 + 0.1*GameLoop.difficulty));
         xVel=(-1);
         if(enemy[i].getX()<=(512-range)){
           specialState=1;
