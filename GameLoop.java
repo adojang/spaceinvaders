@@ -144,7 +144,7 @@ public class GameLoop
         for(int i = 0; i < missileCount; i++)
         {
             
-            missiles[i] = new MissileEntity("missileChar.png", 0, 0, 15, 15, false, 0);
+            missiles[i] = new MissileEntity("missileChar.png", 0 , 0 , 15, 15, false, 0);
             if(i< enemy2Count){
               laser[i] = new MissileEntity("enemyFire.png",0,0,15,15,false,0);
               
@@ -225,7 +225,7 @@ public class GameLoop
                     
                 }
                 
-                if(enemy2[0].getActive() == false && enemy2[1].getActive() == false && enemy2[2].getActive() == false)
+                if(enemy2[0].getActive() == false && enemy2[1].getActive() == false && enemy2[2].getActive() == false )
                 {
                     difficulty = difficulty + 0.2;
                     level = level + 1;
@@ -354,7 +354,7 @@ public class GameLoop
     
     public static void enemyShoot(MissileEntity zap[]){
       for(int i =0; i< enemy2Count; i++){
-        if(zap[i].getActive() == false && StdRandom.bernoulli(1)==true && enemy2[i].getActive()==true){
+        if(zap[i].getActive() == false && StdRandom.bernoulli(0.3)==true && enemy2[i].getActive()==true){
           laser[i].setActive(true);
           laser[i].setX(enemy2[i].getX());
           laser[i].setY(enemy2[i].getY());
@@ -388,6 +388,12 @@ public class GameLoop
         if (PlayerEntity.currentHP(0) >= 2) StdDraw.picture(80, 30, "playerChar.png", 40,40, 0);
         if (PlayerEntity.currentHP(0) == 3) StdDraw.picture(130, 30, "playerChar.png", 40,40, 0); 
       }
+ 
+ public static void resetPlayer(){
+   player.setX(512);
+   player.setY(50);
+ 
+ }
     
     
     

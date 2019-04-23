@@ -66,13 +66,16 @@ public class Collisions
                     {
                         //Set gamestate to gameover
                         Cosmic.gameState = 3;
+                        GameLoop.difficulty=1;
+                        GameLoop.resetPlayer();
                         
                     }//check for player and enemies
                     
-                    if(enemies[j][k].getY() <= 0)
+                    if(enemies[j][k].getY() <= 0 && (enemies[j][k].getActive() == true))
                     {
                         Cosmic.gameState = 3;
-                        
+                        GameLoop.difficulty=1;
+                        GameLoop.resetPlayer();
                     }
                     
                 }//k
@@ -102,7 +105,8 @@ public class Collisions
                     PlayerEntity.currentHP(1);
                     if(PlayerEntity.currentHP(0) <= 0){
                       Cosmic.gameState = 3;
-                      
+                      GameLoop.difficulty=1;
+                      GameLoop.resetPlayer();
                       for(int q=0;q<GameLoop.enemy2Count;q++){
                         enemy2Hp[m]=0;
                       }
