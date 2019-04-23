@@ -1,3 +1,13 @@
+/*
+ * Cosmic Crocodiles 
+ * Created by:
+ * 
+ * Adriaan van Wijk
+ * Eberhardt Korf
+ * William Theron
+ * 
+ */
+
 public class Cosmic
 {
     public static int highscore = 0;
@@ -12,10 +22,9 @@ public class Cosmic
     {
       
         initialise();
-
-        GameLoop.runGameLoop();       
+        GameLoop.runGameLoop(); 
         
-    }//main
+    }
     
     public static void initialise()
     { 
@@ -24,6 +33,6 @@ public class Cosmic
         StdDraw.setXscale(0,1024);
         StdDraw.setYscale(0,700);
    
-    }//initialise
+    }
 
-}//Cosmic
+}

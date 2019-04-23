@@ -1,23 +1,13 @@
 public class PowerUpEntity extends Entity
 {
-    /*
-    private int xPos;
-    private int yPos;
-    private int width;
-    private int height;
-    private String filename;
-    
-    */
-    
     private boolean active;
     private int powerUpType;
-    public static double spawnOdds = 0.001;
+    public static double spawnOdds = 0.003;
     
     /*
      Power Up Types:
      1 - tri missiles
      2 - rapid fire
-     3 - giant missile
      */
     
     PowerUpEntity(String f, double x, double y, int w, int h, int p, boolean state)
@@ -30,26 +20,8 @@ public class PowerUpEntity extends Entity
         powerUpType = p;
         active = state;
         filename = f;
-        
-        
-    }
     
-    /*public double getX()
-    {
-        return xPos;
     }
-    public double getY()
-    {
-        return yPos;
-    }
-    public void setX(double x)
-    {
-        xPos = x;
-    }
-    public void setY(double y)
-    {
-        yPos = y;
-    }*/
     
     public boolean getActive()
     {
@@ -59,28 +31,15 @@ public class PowerUpEntity extends Entity
     {
         active = state;
     }
-    /*public int getWidth()
-    {
-        return width;
-    }
-    public int getHeight()
-    {
-        return height;
-    }*/
+
     public int getPowerUpType()
     {
         return powerUpType;
     }
-    /*public String getFilename()
-    {
-        return filename;
-    }*/
     
     public static PowerUpEntity create()
-    {
-        
+    { 
         PowerUpEntity temp;
-        
         int randomType = (int) (Math.random() * ((2 - 1) + 1)) + 1;
         int randomX = (int) (Math.random() * ((1024 - 0) + 0)) + 0;
         int randomY = (int) (Math.random() * ((200 - 0) + 0)) + 0;
@@ -99,13 +58,6 @@ public class PowerUpEntity extends Entity
         {
             temp = new PowerUpEntity("powerUpChar.png", randomX, randomY, 30, 30, randomType, true);
         }
-        
-
-        
         return temp;
-        
-        
     }
-    
-
 }

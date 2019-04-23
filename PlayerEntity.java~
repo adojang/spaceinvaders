@@ -1,8 +1,8 @@
 public class PlayerEntity extends Entity
 {
-
     private int rotation;
     private int velocity = 5;
+    private static int HP = 3;
     
     PlayerEntity(String f, double x, double y, int w, int h, int r)
     {
@@ -59,7 +59,7 @@ public class PlayerEntity extends Entity
             rotation = 90 + (int) Math.toDegrees(radians);
             
         }
-        if(StdDraw.mouseX() < xPos && StdDraw.mouseY() < yPos)
+        /*if(StdDraw.mouseX() < xPos && StdDraw.mouseY() < yPos)
         {
             
             radians = Math.atan((StdDraw.mouseY()-yPos)/(StdDraw.mouseX()-xPos));
@@ -72,7 +72,7 @@ public class PlayerEntity extends Entity
             radians = Math.atan((StdDraw.mouseY()-yPos)/(StdDraw.mouseX()-xPos));
             rotation = (int) Math.toDegrees(radians) - 90;
             
-        }
+        }*/
         //rotation through mouse
      
         //rotation through keys
@@ -81,6 +81,16 @@ public class PlayerEntity extends Entity
         //rotation through keys
         
     }//update
+    
+    public static int currentHP(int modifyHP)
+    {
+      if (modifyHP == -1) HP = 3;
+       else
+       {
+     HP = HP - modifyHP;
+       }
+     return HP;
+    }
     
 
 }//PlayerEntity

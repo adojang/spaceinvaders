@@ -6,7 +6,7 @@ public class Audio
 {
   private Clip clip;
   
-  
+  //Looping audio track, used for main menu
   public void playloop(String audiofile) {
     try {
       AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(this.getClass().getResource(audiofile));
@@ -20,6 +20,7 @@ public class Audio
     }
   }
   
+  //Non-looping audio track, used for gameOver and shooting sounds
   public void playsound(String audiofile) {
     try {
       AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(this.getClass().getResource(audiofile));
@@ -31,7 +32,7 @@ public class Audio
       ex.printStackTrace();
     }
   }
-  
+  //Stop all sound.
   public void stopmusic()
   {
     clip.stop(); 

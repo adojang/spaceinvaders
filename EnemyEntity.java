@@ -1,29 +1,27 @@
 public class EnemyEntity extends Entity
 {
-
-    private static int velocity = 3;
-    private static int xVel;
-    private boolean active;
-    private static int movementState = 1;
-    private static int specialState =1;
-    private static int verticalState=1;
-    private static int cycles = 0;
-    private static boolean flag = false;
+  
+  private static int velocity = 3;
+  private static int xVel;
+  private boolean active;
+  private static int movementState = 1;
+  private static int specialState =1;
+  private static int verticalState=1;
+  private static int cycles = 0;
+  private static boolean flag = false;
   
   EnemyEntity(String f, double x, double y, int w, int h, boolean state)
   {
-    
     filename = f;
     xPos = x;
     yPos = y;
     width = w;
     height = h;
     active = state;
-    
-  }//create
+  } //Create Enemies
   
-
-   public int getXvel(){
+  
+  public int getXvel(){
     return xVel;
   }
   
@@ -50,7 +48,7 @@ public class EnemyEntity extends Entity
         for(int j = 0; j < GameLoop.enemyCount; j++)
         {
           
-            enemies[i][j].setX(enemies[i][j].getX() + (velocity * GameLoop.difficulty));
+          enemies[i][j].setX(enemies[i][j].getX() + (velocity * GameLoop.difficulty));
           
         }
         
@@ -118,7 +116,7 @@ public class EnemyEntity extends Entity
       
     }
     
-  }//update
+  }//Update Enemies
   
   public void update1(EnemyEntity enemy[], int angle){
     int range=400;
@@ -160,6 +158,5 @@ public class EnemyEntity extends Entity
   }
   
   
-  
-}//EnemyEntity
+}
 

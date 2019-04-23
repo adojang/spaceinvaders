@@ -35,21 +35,9 @@ public class UserInput
         if(StdDraw.isKeyPressed(77)) keys[3] = "MENU";
         if(StdDraw.isKeyPressed(87)) keys[4] = "UP";
         if(StdDraw.isKeyPressed(81)) keys[5] = "QUIT";
-        //if(StdDraw.isKeyPressed(79)) keys[6] = "ROTATELEFT";
-        //if(StdDraw.isKeyPressed(80)) keys[7] = "ROTATERIGHT";
-        
-        //These are obsolete as we now have the mouse to control the turret
+
        
-        if(StdDraw.isKeyPressed(80)) keys[6] = "SCREENSHOT" /* Take a Screenshot */;
-        
-        
-        
-        
-         if(StdDraw.isKeyPressed(79)) keys[7] = "DEBUG"; /*Remove before final version */
-         
-         
-         
-         
+        if(StdDraw.isKeyPressed(80)) keys[6] = "SCREENSHOT";
         if(StdDraw.isKeyPressed(83)) keys[8] = "DOWN";
     }//checkUserInput
     
@@ -80,11 +68,9 @@ public class UserInput
         StdDraw.pause(150);
       }
       
-      //REMOVE ME BEFORE FINAL
+ 
       if (UserInput.checkKeyPressed("DEBUG") == true)
       {
-        //Use this as a debugging key for now, assigned to key 'P'
-        //GAME OVER
         Cosmic.gameState = 3;
       }
 
