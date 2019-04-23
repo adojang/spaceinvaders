@@ -3,7 +3,7 @@ public class Collisions
 {
   public static int playerscore = 0;
   private static int[] enemy2Hp=new int[GameLoop.enemyCount];
-  private static int Hp=5;
+  private static int Hp=10;
     public static boolean hitDetection(double x1, double y1, double x2, double y2)
     {
         boolean xFlag = false;

@@ -63,13 +63,12 @@ public class GameLoop
             {
               
                 StdDraw.clear();
-                StdDraw.picture(512, 350, "b4.jpeg", 1024, 700, 0); 
+                StdDraw.picture(512, 350, "b2.jpeg", 1024, 700, 0); 
+                // External Source: https://wallpaperaccess.com/full/436082.png
                 StdDraw.setPenColor(StdDraw.WHITE);
                 
                 UserInput.checkUserInput();
-                
-                HUD();
-                
+                               
                 entityMovement();
                 
                 createPowerUps();
@@ -79,6 +78,8 @@ public class GameLoop
                 activatePowerUps();
                 
                 updateScreen();
+                
+                HUD();
                 
                 loopCounter++;
                 
@@ -339,7 +340,7 @@ public class GameLoop
               StdDraw.textLeft(400, 650, "BOSSFIGHT");
           }else
           {
-              StdDraw.textLeft(400, 650, "LEVEL" + level);
+              StdDraw.textLeft(400, 650, "LEVEL " + level);
           }
             
         if (PlayerEntity.currentHP(0) >= 1) StdDraw.picture(30, 30, "playerChar.png", 40,40, 0);

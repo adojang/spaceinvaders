@@ -5,7 +5,7 @@ public class Interface
     public static String type = "Monospaced";
     public static Font f0 = new Font(type, Font.BOLD, 80);
     public static Font f1 = new Font(type, Font.BOLD, 50);
-    public static Font f2 = new Font(type, Font.BOLD, 20);
+    public static Font f2 = new Font(type, Font.BOLD, 25);
     private static int loop = 0;
     public static void updatePositions(String filename, double entityX, double entityY, int entityW, int entityH, int entityR)
     {
@@ -39,8 +39,7 @@ public class Interface
             StdDraw.text(512, 330, "D - Right");
             StdDraw.text(512, 300, "P - Screenshot");
             StdDraw.text(512, 270, "Q - Quit");
-            StdDraw.text(512, 240, "<Space> - Shoot");
-            StdDraw.text(512, 210, "O - Lose Hope");       
+            StdDraw.text(512, 240, "<Space> - Shoot");       
             StdDraw.picture(512, 600, "cosmicCrocodilesTitle.png", 900, 100, 0);
             StdDraw.picture(512, 60, "pressSpaceToPlay.png", 512, 50, 0);  
             StdDraw.setFont(f1);
